@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginEnd="10dp"
+    tools:context=".Activitys.Fragments.OfferAndUpdateFragment">
+
+    <TextView
+        android:fontFamily="@font/alike"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:text="Travel tips and offer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:textSize="14sp"
+        android:text="Inspire your next trip with personalized \n recommendation and special offer."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/offerLayout"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/isnText"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:text="Inspiration and offer"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textSize="16sp"
+            android:text="Off"
+            app:layout_constraintTop_toBottomOf="@id/isnText"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/insEdit"
+            android:textColor="@color/black"
+            android:text="Edit"
+            android:textSize="16sp"
+            app:layout_constraintTop_toTopOf="@id/isnText"
+            app:layout_constraintBottom_toBottomOf="@id/isnText"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:background="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/insEdit"
+            app:layout_constraintEnd_toEndOf="@id/insEdit"
+            app:layout_constraintStart_toStartOf="@id/insEdit"
+            android:layout_width="0dp"
+            android:layout_height="1dp"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/tripLayout"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tripText"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:text="Trip planing"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textSize="16sp"
+            android:text="Off"
+            app:layout_constraintTop_toBottomOf="@id/tripText"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/tripEdit"
+            android:textColor="@color/black"
+            android:text="Edit"
+            android:textSize="16sp"
+            app:layout_constraintTop_toTopOf="@id/tripText"
+            app:layout_constraintBottom_toBottomOf="@id/tripText"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:background="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/tripEdit"
+            app:layout_constraintEnd_toEndOf="@id/tripEdit"
+            app:layout_constraintStart_toStartOf="@id/tripEdit"
+            android:layout_width="0dp"
+            android:layout_height="1dp"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <View
+        android:background="@color/lightGray"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/alike"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:text="Airbnb updates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textSize="14sp"
+        android:text="Inspire you next trip with personalized \n recommendations and special offers."
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/newsLayout"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/newsText"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:text="News and programs"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textSize="16sp"
+            android:text="Off"
+            app:layout_constraintTop_toBottomOf="@id/newsText"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/newsEdit"
+            android:textColor="@color/black"
+            android:text="Edit"
+            android:textSize="16sp"
+            app:layout_constraintTop_toTopOf="@id/newsText"
+            app:layout_constraintBottom_toBottomOf="@id/newsText"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:background="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/newsEdit"
+            app:layout_constraintEnd_toEndOf="@id/newsEdit"
+            app:layout_constraintStart_toStartOf="@id/newsEdit"
+            android:layout_width="0dp"
+            android:layout_height="1dp"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/feedbackLayout"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/feedback"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:text="Feedback"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textSize="16sp"
+            android:text="Off"
+            app:layout_constraintTop_toBottomOf="@id/feedback"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/feedbackEt"
+            android:textColor="@color/black"
+            android:text="Edit"
+            android:textSize="16sp"
+            app:layout_constraintTop_toTopOf="@id/feedback"
+            app:layout_constraintBottom_toBottomOf="@id/feedback"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:background="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/feedbackEt"
+            app:layout_constraintEnd_toEndOf="@id/feedbackEt"
+            app:layout_constraintStart_toStartOf="@id/feedbackEt"
+            android:layout_width="0dp"
+            android:layout_height="1dp"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/travelLayout"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/travel"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:text="Travel regulations"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textSize="16sp"
+            android:text="Off"
+            app:layout_constraintTop_toBottomOf="@id/travel"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/travelEt"
+            android:textColor="@color/black"
+            android:text="Edit"
+            android:textSize="16sp"
+            app:layout_constraintTop_toTopOf="@id/travel"
+            app:layout_constraintBottom_toBottomOf="@id/travel"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:background="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/travelEt"
+            app:layout_constraintEnd_toEndOf="@id/travelEt"
+            app:layout_constraintStart_toStartOf="@id/travelEt"
+            android:layout_width="0dp"
+            android:layout_height="1dp"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <View
+        android:background="@color/lightGray"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+
+    <TextView
+        android:fontFamily="@font/alike"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:text="Unsubscribe from all offers \n and updates "
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textSize="14sp"
+        android:text="You'll continuew to get notification about your \n account activity."
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/updateLayout"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/update"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:text="All offers and updates"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textSize="16sp"
+            android:text="All off"
+            app:layout_constraintTop_toBottomOf="@id/update"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/updateEt"
+            android:textColor="@color/black"
+            android:text="Edit"
+            android:textSize="16sp"
+            app:layout_constraintTop_toTopOf="@id/update"
+            app:layout_constraintBottom_toBottomOf="@id/update"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:background="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/updateEt"
+            app:layout_constraintEnd_toEndOf="@id/updateEt"
+            app:layout_constraintStart_toStartOf="@id/updateEt"
+            android:layout_width="0dp"
+            android:layout_height="1dp"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+    android:layout_marginStart="20dp"
+    tools:context=".Activitys.Activity.HealthAndSafetyActivity">
+
+
+    <ImageView
+        android:id="@+id/back"
+        android:src="@drawable/back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/healthText"
+        android:fontFamily="@font/alike"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:text="Health and Safety"
+        android:layout_marginTop="25dp"
+        app:layout_constraintTop_toBottomOf="@id/back"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/covidImg"
+        android:src="@drawable/covid"
+        android:layout_marginTop="25dp"
+        app:layout_constraintTop_toBottomOf="@id/healthText"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/covidText"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:text="Airbnb's COVID-19 safety practices \n apply "
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/healthText"
+        app:layout_constraintStart_toEndOf="@id/covidImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/carbonImg"
+        android:src="@drawable/carbon_img"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/covidImg"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:text="Carbon monoxide alarm"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/carbonImg"
+        app:layout_constraintTop_toTopOf="@id/carbonImg"
+        app:layout_constraintStart_toEndOf="@id/carbonImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/smokeImg"
+        android:src="@drawable/smoke"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/carbonImg"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:text="Smoke alarm"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/smokeImg"
+        app:layout_constraintTop_toTopOf="@id/smokeImg"
+        app:layout_constraintStart_toEndOf="@id/smokeImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

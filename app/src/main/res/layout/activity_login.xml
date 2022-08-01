@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.Activity.LoginActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_margin="10dp"
+            android:id="@+id/crossBtn"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:src="@drawable/cross"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+
+
+
+        <TextView
+            android:id="@+id/loginText"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginStart="16dp"
+            android:text="Log in or sign up to Airbnb"
+            app:layout_constraintTop_toBottomOf="@id/crossBtn"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:background="@drawable/linear_bg"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toBottomOf="@id/loginText"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/countryRegion"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:textSize="14sp"
+                android:layout_marginStart="8dp"
+                android:text="Country/Region"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Spinner
+                android:id="@+id/countrySpinner"
+                android:layout_margin="5dp"
+                app:layout_constraintTop_toBottomOf="@id/countryRegion"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_marginBottom="2dp"
+                android:layout_margin="7dp"
+                android:src="@drawable/down_arrow"
+                app:layout_constraintBottom_toBottomOf="@id/countrySpinner"
+                app:layout_constraintTop_toTopOf="@id/countrySpinner"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <EditText
+            android:id="@+id/numberEt"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:drawableRight="@drawable/down_arrow"
+            android:padding="10dp"
+            android:background="@drawable/linear_bg"
+            android:hint="Phone number"
+            app:layout_constraintTop_toBottomOf="@id/constraintLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/text1"
+            android:textColor="@color/black"
+            android:text="We'll call or text you to confirm your number. Standard \nmessage and date rates apply"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintTop_toBottomOf="@id/numberEt"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:backgroundTint="#DDD5D5"
+            android:background="@drawable/btn_bg"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/continueBtn"
+            android:text="Continue"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintTop_toBottomOf="@id/text1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:id="@+id/searchEt"
+            android:text="or"
+            android:textColor="@color/black"
+            android:layout_marginTop="15dp"
+            app:layout_constraintTop_toBottomOf="@id/continueBtn"
+            app:layout_constraintEnd_toEndOf="@id/continueBtn"
+            app:layout_constraintStart_toStartOf="@id/continueBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/emailBtn"
+            android:layout_marginTop="25dp"
+            android:padding="12dp"
+            android:background="@drawable/btn_bg"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toBottomOf="@id/searchEt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginStart="10dp"
+                android:src="@drawable/email1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="Continue with Email"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+<!--
+       <androidx.appcompat.widget.AppCompatButton
+           android:id="@+id/emailBtn"
+           android:layout_marginStart="16dp"
+           android:layout_marginEnd="16dp"
+           android:layout_marginTop="10dp"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintTop_toBottomOf="@id/text2"
+           android:background="@drawable/btn_bg"
+           android:text="Continue with Email"
+           android:textColor="@color/black"
+           android:textAllCaps="false"
+           android:padding="10dp"
+           android:drawableLeft="@drawable/email1"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"/>
+-->
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/facebookBtn"
+            android:layout_marginTop="15dp"
+            android:padding="12dp"
+            android:background="@drawable/btn_bg"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toBottomOf="@id/emailBtn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginStart="10dp"
+                android:src="@drawable/facebook"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="Continue with Facebook"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/googleBtn"
+            android:layout_marginTop="15dp"
+            android:padding="12dp"
+            android:background="@drawable/btn_bg"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toBottomOf="@id/facebookBtn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginStart="10dp"
+                android:src="@drawable/google"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="Continue with Google"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/appleBtn"
+            android:layout_marginTop="15dp"
+            android:padding="12dp"
+            android:background="@drawable/btn_bg"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toBottomOf="@id/googleBtn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginStart="10dp"
+                android:src="@drawable/apple"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="Continue with Apple"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+</ScrollView>

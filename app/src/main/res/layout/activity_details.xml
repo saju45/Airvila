@@ -1,0 +1,1365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.Activity.DetailsActivity">
+
+    <ScrollView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image"
+                android:scaleType="centerCrop"
+                android:src="@drawable/photo1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:scaleType="centerCrop"
+                android:id="@+id/back"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/left_arrow"
+                app:layout_constraintTop_toTopOf="@id/image"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+            <View
+                android:background="@drawable/circler_bg"
+                app:layout_constraintBottom_toBottomOf="@id/back"
+                app:layout_constraintTop_toTopOf="@id/back"
+                app:layout_constraintEnd_toEndOf="@id/back"
+                app:layout_constraintStart_toStartOf="@id/back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:scaleType="centerCrop"
+                android:id="@+id/fvtBtn"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/circle_heart"
+                app:layout_constraintTop_toTopOf="@id/image"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:scaleType="centerCrop"
+                android:id="@+id/uploadBtn"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/upload"
+                app:layout_constraintTop_toTopOf="@id/image"
+                app:layout_constraintEnd_toStartOf="@id/fvtBtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+
+
+            <LinearLayout
+
+                android:orientation="vertical"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintTop_toBottomOf="@id/image"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/locationName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="Adaran club Rannalhi \nMaldives, Water\nBungalows"
+                    android:textColor="@color/black"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:id="@+id/location"
+                    android:text="maldives"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:background="@color/lightGray"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+
+                <TextView
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    android:text="Demo hosted by \n Dorothy"
+                    android:layout_marginTop="25dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="-50dp"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="end"
+                    android:src="@drawable/mothers_day"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"/>
+
+
+                <LinearLayout
+                    android:weightSum="4"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:layout_weight="1.5"
+                        android:text="6 guests ."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:layout_weight="1"
+                        android:text="1 bedroom ."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:layout_weight="0.75"
+                        android:text=". 1 bed "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:layout_weight="0.75"
+                        android:text=". 1 bath "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+
+                </LinearLayout>
+
+                <View
+                    android:background="@color/lightGray"
+                    android:layout_marginTop="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_marginTop="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/poolImage"
+                        android:src="@drawable/pool"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/diveText"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:text="Dive right in"
+                        android:layout_marginStart="10dp"
+                        app:layout_constraintTop_toTopOf="@id/poolImage"
+                        app:layout_constraintStart_toEndOf="@id/poolImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/dive_details"
+                        android:textSize="14sp"
+                        android:text="This is one of the few places in the area \n with pool."
+                        app:layout_constraintTop_toBottomOf="@id/diveText"
+                        app:layout_constraintStart_toStartOf="@id/diveText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/starImage"
+                        android:src="@drawable/start_2"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/experiencedText"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:text="Experienced host"
+                        android:layout_marginStart="10dp"
+                        app:layout_constraintTop_toTopOf="@id/starImage"
+                        app:layout_constraintStart_toEndOf="@id/starImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/experiencedDetailText"
+                        android:textSize="14sp"
+                        android:text="Dorothy has 752 reviews for other places"
+                        app:layout_constraintTop_toBottomOf="@id/experiencedText"
+                        app:layout_constraintStart_toStartOf="@id/experiencedText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/freeImage"
+                        android:src="@drawable/notes"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/freeTextt"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:text="Free cancellation for 48 hours."
+                        android:layout_marginStart="10dp"
+                        app:layout_constraintTop_toTopOf="@id/freeImage"
+                        app:layout_constraintStart_toEndOf="@id/freeImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <View
+                    android:background="@color/lightGray"
+                    android:layout_marginTop="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/aircoverLinear"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:textColor="@color/red"
+                            android:textSize="35sp"
+                            android:text="air"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+
+                        <TextView
+                            android:textColor="@color/black"
+                            android:textSize="35sp"
+                            android:text="cover"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintTop_toBottomOf="@id/aircoverLinear"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:id="@+id/aircoverDetails"
+                        android:text="Every booking includes free protection from \n Host cancellations, listing inacuracies,and \n other issues like trouble checking in."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/airCoverLearnMore"
+                        android:layout_marginTop="5dp"
+                        app:layout_constraintTop_toBottomOf="@id/aircoverDetails"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:textColor="@color/black"
+                        android:fontFamily="sans-serif"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:text="Learn more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <View
+                        android:background="@color/black"
+                        app:layout_constraintTop_toBottomOf="@id/airCoverLearnMore"
+                        app:layout_constraintEnd_toEndOf="@id/airCoverLearnMore"
+                        app:layout_constraintStart_toStartOf="@id/airCoverLearnMore"
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"/>
+
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <View
+                  android:id="@+id/view6"
+                    android:background="@color/lightGray"
+                    android:layout_marginTop="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_marginTop="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/bestLocation"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:text="Adaaran Club Rannalhi is fearured \ among the best hotels in Maldives and \n sits exclusively at the tip of the South \n Male atoll with the exotic collection of  \n islands known as the Maldives, Its unique \n Location offers access to pristine beacheches.."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:id="@+id/show_more"
+                        android:text="show more"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintTop_toBottomOf="@id/bestLocation"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <View
+                        android:background="@color/black"
+                        app:layout_constraintTop_toBottomOf="@id/show_more"
+                        app:layout_constraintEnd_toEndOf="@id/show_more"
+                        app:layout_constraintStart_toStartOf="@id/show_more"
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+                <View
+                    android:background="@color/lightGray"
+                    android:layout_marginTop="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/sleepText"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        android:text="Where you'll sleep"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:padding="10dp"
+                        app:cardElevation="4dp"
+                        android:elevation="3dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintTop_toBottomOf="@id/sleepText"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_width="135dp"
+                        android:layout_height="135dp">
+
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/bedImage"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                android:src="@drawable/bed"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:id="@+id/bedroomText"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+                                android:text="Bedroom"
+                                android:layout_marginTop="8dp"
+                                app:layout_constraintTop_toBottomOf="@id/bedImage"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:textSize="14sp"
+                                android:text="1 double bed"
+                                app:layout_constraintTop_toBottomOf="@id/bedroomText"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+
+
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <View
+                    android:background="@color/lightGray"
+                    android:layout_marginTop="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+
+                    android:layout_marginTop="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/whatthisOfferText"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@color/black"
+                        android:textSize="24sp"
+                        android:text="What this place offers"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:id="@+id/wifiImg"
+                        android:src="@drawable/wifi"
+                        android:layout_marginTop="15dp"
+                        app:layout_constraintTop_toBottomOf="@id/whatthisOfferText"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:text="Wifi"
+                        android:layout_marginStart="8dp"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:layout_marginTop="15dp"
+                        app:layout_constraintTop_toBottomOf="@id/whatthisOfferText"
+                        app:layout_constraintStart_toEndOf="@id/wifiImg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+
+                    <ImageView
+                        android:id="@+id/poolImg"
+                        android:src="@drawable/pool"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintTop_toBottomOf="@id/wifiImg"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:text="Pool"
+                        android:layout_marginStart="8dp"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintTop_toBottomOf="@id/wifiImg"
+                        app:layout_constraintStart_toEndOf="@id/poolImg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+
+
+                    <ImageView
+                        android:id="@+id/tvImg"
+                        android:src="@drawable/television"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintTop_toBottomOf="@id/poolImg"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:text="TV"
+                        android:layout_marginStart="8dp"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintTop_toBottomOf="@id/poolImg"
+                        app:layout_constraintStart_toEndOf="@id/tvImg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+
+
+                    <ImageView
+                        android:id="@+id/airImg"
+                        android:src="@drawable/air"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintTop_toBottomOf="@id/tvImg"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:text="Air conditioning"
+                        android:layout_marginStart="8dp"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintTop_toBottomOf="@id/tvImg"
+                        app:layout_constraintStart_toEndOf="@id/airImg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+
+                    <ImageView
+                        android:id="@+id/hairImg"
+                        android:src="@drawable/hair_dryer"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintTop_toBottomOf="@id/airImg"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/hairText"
+                        android:text="Hair dryer"
+                        android:layout_marginStart="8dp"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintTop_toBottomOf="@id/airImg"
+                        app:layout_constraintStart_toEndOf="@id/hairImg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:background="@drawable/btn_bg"
+                        android:layout_marginTop="15dp"
+                        app:layout_constraintTop_toBottomOf="@id/hairText"
+                        app:layout_constraintStart_toStartOf="@id/poolImg"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp">
+
+
+                        <TextView
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:text="Show all"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:id="@+id/offerCountText"
+                            android:text="14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:text="amenities"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <View
+                    android:background="@color/lightGray"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/whereYou"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        android:text="Where you'll be "
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/countryName"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:text="Maldives"
+                        app:layout_constraintTop_toBottomOf="@id/whereYou"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                    <ImageView
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/google_home"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/google_home"
+                        app:layout_constraintTop_toBottomOf="@id/countryName"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"/>
+
+                    <TextView
+                        android:layout_marginTop="15dp"
+                        android:padding="10dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/btn_bg"
+                        android:textColor="@color/black"
+                        android:text="Exact location provided after booking."
+                        app:layout_constraintTop_toTopOf="@id/google_home"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <View
+                        android:id="@+id/view7"
+                        app:layout_constraintTop_toBottomOf="@id/google_home"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:background="@color/lightGray"
+                        android:layout_marginTop="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+
+                    <TextView
+                        android:id="@+id/no_reviews"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        android:text="No reviews (yet)"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintTop_toBottomOf="@id/view7"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                    <TextView
+                        android:textSize="14sp"
+                        android:layout_marginEnd="5dp"
+                        android:id="@+id/no_reviews_Details"
+                        android:text="This host has 752 review for other place to \n staay."
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintTop_toBottomOf="@id/no_reviews"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/no_reviews_fvt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/no_reviews_show"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:text="show other reviews"
+                        app:layout_constraintTop_toBottomOf="@id/no_reviews_Details"
+                        app:layout_constraintStart_toStartOf="@id/no_reviews_Details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <View
+                        android:background="@color/black"
+                        app:layout_constraintTop_toBottomOf="@id/no_reviews_show"
+                        app:layout_constraintEnd_toEndOf="@id/no_reviews_show"
+                        app:layout_constraintStart_toStartOf="@id/no_reviews_show"
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"/>
+
+                    <ImageView
+                        android:id="@+id/no_reviews_fvt"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintTop_toBottomOf="@id/no_reviews"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:src="@drawable/start_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/no_reviews_goText"
+                        android:layout_marginEnd="8dp"
+                        android:text="We're here to help your trip go smoothy. Every reservation is covered by "
+                        app:layout_constraintTop_toBottomOf="@id/no_reviews_show"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/no_reviews_world"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <TextView
+                        android:id="@+id/airbnbPolicy"
+                        android:text="Airbnb's Guest Refund Policy."
+                        app:layout_constraintTop_toBottomOf="@id/no_reviews_goText"
+                        app:layout_constraintEnd_toEndOf="@id/no_reviews_goText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <View
+                        android:id="@+id/view2"
+                        android:background="@color/black"
+                        app:layout_constraintTop_toBottomOf="@id/airbnbPolicy"
+                        app:layout_constraintEnd_toEndOf="@id/airbnbPolicy"
+                        app:layout_constraintStart_toStartOf="@id/airbnbPolicy"
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"/>
+
+                    <ImageView
+                        android:id="@+id/no_reviews_world"
+                        android:src="@drawable/world"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintTop_toBottomOf="@id/no_reviews_show"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+
+                    <View
+                        android:id="@+id/view3"
+                        app:layout_constraintTop_toBottomOf="@id/view2"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:background="@color/lightGray"
+                        android:layout_marginTop="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+
+
+                    <TextView
+                        android:id="@+id/hostedBy"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        android:text="Hosted by Dorothy"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintTop_toBottomOf="@id/view3"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                    <TextView
+                        android:textSize="18sp"
+                        android:id="@+id/joinDate"
+                        android:text="Joined in Octobar 2015"
+                        app:layout_constraintTop_toBottomOf="@id/hostedBy"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:id="@+id/hosteBy_start"
+                        android:src="@drawable/start_2"
+                        android:layout_marginTop="15dp"
+                        app:layout_constraintTop_toBottomOf="@id/joinDate"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_marginStart="8dp"
+                        android:id="@+id/reviewsCount"
+                        android:text="752 Reviews"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintTop_toBottomOf="@id/joinDate"
+                        app:layout_constraintStart_toEndOf="@id/hosteBy_start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:id="@+id/verifiedImg"
+                        android:src="@drawable/verifiedr"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintTop_toBottomOf="@id/hosteBy_start"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:text="Identity verified"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintTop_toBottomOf="@id/hosteBy_start"
+                        app:layout_constraintStart_toEndOf="@id/verifiedImg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+
+                    <TextView
+                        android:textSize="18sp"
+                        android:id="@+id/bornDetails"
+                        android:text="I was born in 1978 in izmir. After I \n have graduated Tourism and Hotel \nManagement ,I have"
+                        android:layout_marginTop="15dp"
+                        app:layout_constraintTop_toBottomOf="@id/verifiedImg"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:id="@+id/language"
+                        android:text="Languages : "
+                        android:layout_marginTop="15dp"
+                        app:layout_constraintTop_toBottomOf="@id/bornDetails"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:id="@+id/languageText"
+                        android:text="English,Tukce"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintTop_toBottomOf="@id/bornDetails"
+                        app:layout_constraintStart_toEndOf="@id/language"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/response"
+                        android:text="Response rate :"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:layout_marginTop="5dp"
+                        app:layout_constraintTop_toBottomOf="@id/language"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/responseRate"
+                        android:text="65%"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="5dp"
+                        app:layout_constraintTop_toBottomOf="@id/language"
+                        app:layout_constraintStart_toEndOf="@id/response"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/response_time"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:text="Response time :"
+                        android:layout_marginTop="5dp"
+                        app:layout_constraintTop_toBottomOf="@id/response"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/response_time1"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:text="withing a day"
+                        android:layout_marginTop="5dp"
+                        app:layout_constraintTop_toBottomOf="@id/response"
+                        app:layout_constraintStart_toEndOf="@id/response_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/contactHostBtn"
+                        android:text="Contact Host"
+                        android:textAllCaps="false"
+                        android:background="@drawable/btn_bg"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintTop_toBottomOf="@id/response_time"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                    <TextView
+                        android:id="@+id/protectMoneyText"
+                        android:layout_marginEnd="10dp"
+                        android:text="To Protect your payment, never transfer money or communicate outside of the Airbnb website or app."
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintTop_toBottomOf="@id/contactHostBtn"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/moneyImg"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:id="@+id/moneyImg"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintTop_toBottomOf="@id/contactHostBtn"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <View
+                        android:id="@+id/view4"
+                        app:layout_constraintTop_toBottomOf="@id/protectMoneyText"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:background="@color/lightGray"
+                        android:layout_marginTop="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardAvailbility"
+                        app:layout_constraintTop_toBottomOf="@id/view4"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                            <TextView
+                                android:id="@+id/availabilityText"
+                                android:fontFamily="sans-serif"
+                                android:textColor="@color/black"
+                                android:textSize="22sp"
+                                android:text="Availability "
+                                android:layout_marginTop="15dp"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:id="@+id/availabilityDate"
+                                android:textSize="18sp"
+                                android:text="sep 24-29"
+                                app:layout_constraintTop_toBottomOf="@id/availabilityText"
+                                app:layout_constraintStart_toStartOf="parent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <ImageView
+                                android:src="@drawable/right_arrow"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <View
+                                android:background="@color/lightGray"
+                                android:layout_marginTop="10dp"
+                                app:layout_constraintTop_toBottomOf="@id/availabilityDate"
+                                app:layout_constraintStart_toStartOf="parent"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"/>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardHouseRules"
+                        app:layout_constraintTop_toBottomOf="@id/cardAvailbility"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                            <TextView
+                                android:id="@+id/houserulesText"
+                                android:fontFamily="sans-serif"
+                                android:textColor="@color/black"
+                                android:textSize="22sp"
+                                android:text="House rules "
+                                android:layout_marginTop="15dp"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:id="@+id/houseRulesDate"
+                                android:textSize="18sp"
+                                android:text="check in-After 3:00 PM"
+                                app:layout_constraintTop_toBottomOf="@id/houserulesText"
+                                app:layout_constraintStart_toStartOf="parent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <ImageView
+                                android:src="@drawable/right_arrow"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <View
+                                android:background="@color/lightGray"
+                                android:layout_marginTop="10dp"
+                                app:layout_constraintTop_toBottomOf="@id/houseRulesDate"
+                                app:layout_constraintStart_toStartOf="parent"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"/>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardHealthAndSafety"
+                        app:layout_constraintTop_toBottomOf="@id/cardHouseRules"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                            <TextView
+                                android:id="@+id/healtAndsafetext"
+                                android:fontFamily="sans-serif"
+                                android:textColor="@color/black"
+                                android:textSize="22sp"
+                                android:text="Heath And Safety "
+                                android:layout_marginTop="15dp"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:id="@+id/safetyCovid19"
+                                android:textSize="18sp"
+                                android:text="check in-After 3:00 PM"
+                                app:layout_constraintTop_toBottomOf="@id/healtAndsafetext"
+                                app:layout_constraintStart_toStartOf="parent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <ImageView
+                                android:src="@drawable/right_arrow"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <View
+                                android:background="@color/lightGray"
+                                android:layout_marginTop="10dp"
+                                app:layout_constraintTop_toBottomOf="@id/safetyCovid19"
+                                app:layout_constraintStart_toStartOf="parent"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"/>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardPolicy"
+                        app:layout_constraintTop_toBottomOf="@id/cardHealthAndSafety"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                            <TextView
+                                android:id="@+id/policyText"
+                                android:fontFamily="sans-serif"
+                                android:textColor="@color/black"
+                                android:textSize="22sp"
+                                android:text="Cancellation Policy "
+                                android:layout_marginTop="15dp"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:layout_marginEnd="10dp"
+                                android:id="@+id/camcellationHour"
+                                android:textSize="18sp"
+                                android:text="Free cancellation for 48 hours Review the Host's full cancellation policy  which applies even if you cancel for illness  or disruption caused by CoViD-19 "
+                                app:layout_constraintTop_toBottomOf="@id/policyText"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/cancellationImg"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"/>
+
+                            <ImageView
+                                android:id="@+id/cancellationImg"
+                                android:src="@drawable/right_arrow"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <View
+                                android:background="@color/lightGray"
+                                android:layout_marginTop="10dp"
+                                app:layout_constraintTop_toBottomOf="@id/camcellationHour"
+                                app:layout_constraintStart_toStartOf="parent"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"/>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardReport"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/cardPolicy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                android:id="@+id/reportText"
+                                android:text="Report this listing"
+                                android:layout_marginTop="15dp"
+                                android:textSize="18sp"
+                                android:textColor="@color/black"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <View
+                                android:background="@color/lightGray"
+                                app:layout_constraintTop_toBottomOf="@id/reportText"
+                                app:layout_constraintEnd_toEndOf="@id/reportText"
+                                app:layout_constraintStart_toStartOf="@id/reportText"
+                                android:layout_width="0dp"
+                                android:layout_height="1dp"/> 
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </LinearLayout>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </ScrollView>
+
+    <androidx.cardview.widget.CardView
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/viewId"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:background="@color/lightGray"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="30dp"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:text="$600 night"
+                app:layout_constraintTop_toBottomOf="@id/viewId"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/date"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="sep 24-29"
+                app:layout_constraintTop_toBottomOf="@id/price"
+                app:layout_constraintStart_toStartOf="@id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:padding="10dp"
+                android:id="@+id/reserveBtn"
+                android:layout_marginTop="30dp"
+                android:text="Reserve"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_bg"
+                android:backgroundTint="#E33C74"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintTop_toBottomOf="@id/viewId"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/reserveBtn"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

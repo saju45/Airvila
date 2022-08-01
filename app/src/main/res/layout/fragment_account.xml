@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginEnd="10dp"
+    tools:context=".Activitys.Fragments.AccountFragment">
+
+
+
+    <TextView
+        android:fontFamily="@font/alike"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:text="Account activity and policies"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"
+        android:text="Confirm your booking and account activity, and \n learn about important Airbnb polices."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/accountLayout"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/account"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:text="Account activity"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/account_on"
+            android:textSize="14sp"
+            android:text="on:"
+            app:layout_constraintTop_toBottomOf="@id/account"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:id="@+id/account_Email"
+            android:textSize="14sp"
+            android:text="Email,"
+            app:layout_constraintTop_toBottomOf="@id/account"
+            app:layout_constraintStart_toEndOf="@id/account_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+        <TextView
+            android:id="@+id/account_push"
+            android:textSize="14sp"
+            android:text="Push,"
+            app:layout_constraintTop_toBottomOf="@id/account"
+            app:layout_constraintStart_toEndOf="@id/account_Email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/account_and"
+            android:textSize="14sp"
+            android:text="And "
+            app:layout_constraintTop_toBottomOf="@id/account"
+            app:layout_constraintStart_toEndOf="@id/account_push"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/account_sms"
+            android:textSize="14sp"
+            android:text="Sms"
+            app:layout_constraintTop_toBottomOf="@id/account"
+            app:layout_constraintStart_toEndOf="@id/account_and"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/accountEdit"
+            android:textColor="@color/black"
+            android:text="Edit"
+            android:textSize="16sp"
+            app:layout_constraintTop_toTopOf="@id/account"
+            app:layout_constraintBottom_toBottomOf="@id/account"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:background="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/accountEdit"
+            app:layout_constraintEnd_toEndOf="@id/accountEdit"
+            app:layout_constraintStart_toStartOf="@id/accountEdit"
+            android:layout_width="0dp"
+            android:layout_height="1dp"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/policeLayout"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/police"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:text="Guest polices"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/polices_on"
+            android:textSize="14sp"
+            android:text="on:"
+            app:layout_constraintTop_toBottomOf="@id/police"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:id="@+id/police_Email"
+            android:textSize="14sp"
+            android:text="Email,"
+            app:layout_constraintTop_toBottomOf="@id/police"
+            app:layout_constraintStart_toEndOf="@id/polices_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+        <TextView
+            android:id="@+id/polices_push"
+            android:textSize="14sp"
+            android:text="Push,"
+            app:layout_constraintTop_toBottomOf="@id/police"
+            app:layout_constraintStart_toEndOf="@id/police_Email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/police_and"
+            android:textSize="14sp"
+            android:text="And "
+            app:layout_constraintTop_toBottomOf="@id/police"
+            app:layout_constraintStart_toEndOf="@id/polices_push"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/police_sms"
+            android:textSize="14sp"
+            android:text="Sms"
+            app:layout_constraintTop_toBottomOf="@id/police"
+            app:layout_constraintStart_toEndOf="@id/police_and"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/policesEdit"
+            android:textColor="@color/black"
+            android:text="Edit"
+            android:textSize="16sp"
+            app:layout_constraintTop_toTopOf="@id/police"
+            app:layout_constraintBottom_toBottomOf="@id/police"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:background="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/policesEdit"
+            app:layout_constraintEnd_toEndOf="@id/policesEdit"
+            app:layout_constraintStart_toStartOf="@id/policesEdit"
+            android:layout_width="0dp"
+            android:layout_height="1dp"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    <View
+        android:background="@color/lightGray"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+
+
+
+    <TextView
+        android:fontFamily="@font/alike"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="25dp"
+        android:text="Reminders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textSize="14sp"
+        android:text="Get important reminders about your \n reservations, listings, and account activity."
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/remindersLayout"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/reminders"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:text="Reminders"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/reminders_on"
+            android:textSize="14sp"
+            android:text="on:"
+            app:layout_constraintTop_toBottomOf="@id/reminders"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:id="@+id/reminders_Email"
+            android:textSize="14sp"
+            android:text="Email,"
+            app:layout_constraintTop_toBottomOf="@id/reminders"
+            app:layout_constraintStart_toEndOf="@id/reminders_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+        <TextView
+            android:id="@+id/reminders_push"
+            android:textSize="14sp"
+            android:text="Push,"
+            app:layout_constraintTop_toBottomOf="@id/reminders"
+            app:layout_constraintStart_toEndOf="@id/reminders_Email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/reminders_and"
+            android:textSize="14sp"
+            android:text="And "
+            app:layout_constraintTop_toBottomOf="@id/reminders"
+            app:layout_constraintStart_toEndOf="@id/reminders_push"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/reminders_sms"
+            android:textSize="14sp"
+            android:text="Sms"
+            app:layout_constraintTop_toBottomOf="@id/reminders"
+            app:layout_constraintStart_toEndOf="@id/reminders_and"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/remindersEdit"
+            android:textColor="@color/black"
+            android:text="Edit"
+            android:textSize="16sp"
+            app:layout_constraintTop_toTopOf="@id/reminders"
+            app:layout_constraintBottom_toBottomOf="@id/reminders"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:background="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/remindersEdit"
+            app:layout_constraintEnd_toEndOf="@id/remindersEdit"
+            app:layout_constraintStart_toStartOf="@id/remindersEdit"
+            android:layout_width="0dp"
+            android:layout_height="1dp"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <View
+        android:background="@color/lightGray"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+
+    <TextView
+        android:fontFamily="@font/alike"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:text="Guest and Host messages"
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textSize="14sp"
+        android:text="keep in touch with your Host or guests before \n and during your trip."
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/messageLayout"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/message"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:text="Messages"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/message_on"
+            android:textSize="14sp"
+            android:text="on:"
+            app:layout_constraintTop_toBottomOf="@id/message"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:id="@+id/message_Email"
+            android:textSize="14sp"
+            android:text="Email,"
+            app:layout_constraintTop_toBottomOf="@id/message"
+            app:layout_constraintStart_toEndOf="@id/message_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+        <TextView
+            android:id="@+id/message_push"
+            android:textSize="14sp"
+            android:text="Push,"
+            app:layout_constraintTop_toBottomOf="@id/message"
+            app:layout_constraintStart_toEndOf="@id/message_Email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/message_and"
+            android:textSize="14sp"
+            android:text="And "
+            app:layout_constraintTop_toBottomOf="@id/message"
+            app:layout_constraintStart_toEndOf="@id/message_push"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/message_sms"
+            android:textSize="14sp"
+            android:text="Sms"
+            app:layout_constraintTop_toBottomOf="@id/message"
+            app:layout_constraintStart_toEndOf="@id/message_and"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/messageEdit"
+            android:textColor="@color/black"
+            android:text="Edit"
+            android:textSize="16sp"
+            app:layout_constraintTop_toTopOf="@id/message"
+            app:layout_constraintBottom_toBottomOf="@id/message"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:background="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/messageEdit"
+            app:layout_constraintEnd_toEndOf="@id/messageEdit"
+            app:layout_constraintStart_toStartOf="@id/messageEdit"
+            android:layout_width="0dp"
+            android:layout_height="1dp"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</LinearLayout>
