@@ -13,6 +13,7 @@ import com.example.airbnb.Activitys.Activity.EditPersonalInfoActivity;
 import com.example.airbnb.Activitys.Activity.NotificationActivity;
 import com.example.airbnb.Activitys.Activity.PrivacyActivity;
 import com.example.airbnb.Activitys.Activity.TranslationActivity;
+import com.example.airbnb.Activitys.Host.Activity.HostMainActivity;
 import com.example.airbnb.R;
 import com.example.airbnb.databinding.FragmentProfileBinding;
 
@@ -71,6 +72,13 @@ public class ProfileFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getContext(), PrivacyActivity.class));
+            }
+        });
+
+        binding.cardHost.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getContext(), HostMainActivity.class));
             }
         });
 

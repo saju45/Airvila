@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activitys.Host.Fragment.HowManyGuestFragment">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/guestText"
+            android:textSize="18sp"
+            android:text="Guests"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_marginEnd="10dp"
+            android:id="@+id/guestAdd"
+            android:src="@drawable/add"
+            app:layout_constraintBottom_toBottomOf="@id/guestText"
+            app:layout_constraintTop_toTopOf="@id/guestText"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/guestCount"
+            android:layout_marginEnd="15dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@id/guestText"
+            app:layout_constraintTop_toTopOf="@id/guestText"
+            app:layout_constraintEnd_toStartOf="@id/guestAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/guestMinus"
+            android:src="@drawable/minus"
+            android:layout_marginEnd="15dp"
+            app:layout_constraintBottom_toBottomOf="@id/guestText"
+            app:layout_constraintTop_toTopOf="@id/guestText"
+            app:layout_constraintEnd_toStartOf="@id/guestCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/bedsText"
+            android:textSize="18sp"
+            android:text="Beds"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_marginEnd="10dp"
+            android:id="@+id/bedsAdd"
+            android:src="@drawable/add"
+            app:layout_constraintBottom_toBottomOf="@id/bedsText"
+            app:layout_constraintTop_toTopOf="@id/bedsText"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/bedsCount"
+            android:layout_marginEnd="15dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@id/bedsText"
+            app:layout_constraintTop_toTopOf="@id/bedsText"
+            app:layout_constraintEnd_toStartOf="@id/bedsAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/bedsMinus"
+            android:src="@drawable/minus"
+            android:layout_marginEnd="15dp"
+            app:layout_constraintBottom_toBottomOf="@id/bedsText"
+            app:layout_constraintTop_toTopOf="@id/bedsText"
+            app:layout_constraintEnd_toStartOf="@id/bedsCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/bathroomsText"
+            android:textSize="18sp"
+            android:text="Bathrooms"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_marginEnd="10dp"
+            android:id="@+id/bathroomsAdd"
+            android:src="@drawable/add"
+            app:layout_constraintBottom_toBottomOf="@id/bathroomsText"
+            app:layout_constraintTop_toTopOf="@id/bathroomsText"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/bathroomsCount"
+            android:layout_marginEnd="15dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@id/bathroomsText"
+            app:layout_constraintTop_toTopOf="@id/bathroomsText"
+            app:layout_constraintEnd_toStartOf="@id/bathroomsAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/bathroomsMinus"
+            android:src="@drawable/minus"
+            android:layout_marginEnd="15dp"
+            app:layout_constraintBottom_toBottomOf="@id/bathroomsText"
+            app:layout_constraintTop_toTopOf="@id/bathroomsText"
+            app:layout_constraintEnd_toStartOf="@id/bathroomsCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/alike"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:text="Are any of these bathrooms private?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_marginStart="10dp"
+            android:textSize="16sp"
+            android:text="Yes"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RadioButton
+            android:id="@+id/yesRadioBtn"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_marginStart="10dp"
+            android:textSize="16sp"
+            android:text="No,they're all shared"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RadioButton
+            android:id="@+id/noRadioBtn"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

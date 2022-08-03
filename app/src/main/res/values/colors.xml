@@ -13,4 +13,17 @@
     <color name="lightGray">#D3D3D3</color>
     <color name="transprent">#00FFFFFF</color>
 
+
+    <color name="gray">#cdc9c3</color>
+    <color name="green">#c6ebc9</color>
+    <color name="light_green">#cfffa5</color>
+    <color name="sky_blue">#a7c5eb</color>
+    <color name="pink">#f3ebe3</color>
+    <color name="color1">#efbbcf</color>
+    <color name="color2">#d6b0b1</color>
+    <color name="color3">#ccf6cB</color>
+    <color name="color4">#ffe0ac</color>
+    <color name="color5">#e5cfe5</color>
+
+
 </resources>

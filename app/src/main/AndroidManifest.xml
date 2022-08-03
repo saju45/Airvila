@@ -17,6 +17,15 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".Activitys.Host.Activity.WelcomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.Host.Activity.ListingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.Host.Activity.HostMainActivity"
+            android:exported="false" />
+        <activity
             android:name=".Activitys.Activity.PrivacyActivity"
             android:exported="false" />
         <activity
@@ -48,7 +57,7 @@
             android:exported="false" />
         <activity
             android:name=".Activitys.Activity.LoginActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".Activitys.Activity.MainActivity"
             android:exported="true">
