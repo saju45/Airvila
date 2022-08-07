@@ -1,6 +1,7 @@
 package com.example.airbnb.Activitys.Host.Adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,6 +9,9 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.airbnb.Activitys.Host.Activity.HostMainActivity;
+import com.example.airbnb.Activitys.Host.Activity.ListingDetailsActivity;
+import com.example.airbnb.Activitys.Host.Activity.ListingsActivity;
 import com.example.airbnb.Activitys.Host.Model.UnlistedModel;
 import com.example.airbnb.R;
 import com.example.airbnb.databinding.SimpleListingLayoutBinding;
@@ -41,6 +45,16 @@ public class ListedAdapter extends RecyclerView.Adapter<ListedAdapter.viewHoldr>
 
         Picasso.get().load(model.getImage()).placeholder(R.drawable.photo1).into(holder.binding.image);
         holder.binding.name.setText(model.getName());
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent=new Intent(context, ListingDetailsActivity.class);
+                context.startActivity(intent);
+
+            }
+        });
 
     }
 

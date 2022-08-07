@@ -8,15 +8,27 @@
         <entry key="app/src/main/res/drawable/btn_bg.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/linear_bg.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/search_bg.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_accessibility.xml" value="0.15833333333333333" />
+        <entry key="app/src/main/res/layout/activity_amenities.xml" value="0.15925925925925927" />
+        <entry key="app/src/main/res/layout/activity_change_cover_img.xml" value="0.20093457943925233" />
+        <entry key="app/src/main/res/layout/activity_descripotion_edit.xml" value="0.15833333333333333" />
+        <entry key="app/src/main/res/layout/activity_description.xml" value="0.1762295081967213" />
         <entry key="app/src/main/res/layout/activity_details.xml" value="0.15709046454767725" />
         <entry key="app/src/main/res/layout/activity_edit_personal_info.xml" value="0.12078651685393259" />
         <entry key="app/src/main/res/layout/activity_health_and_safety.xml" value="0.22279792746113988" />
         <entry key="app/src/main/res/layout/activity_host_main.xml" value="0.14" />
+        <entry key="app/src/main/res/layout/activity_list_title.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_listing_details.xml" value="0.17063492063492064" />
         <entry key="app/src/main/res/layout/activity_listings.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.15925925925925927" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.18143459915611815" />
+        <entry key="app/src/main/res/layout/activity_main2.xml" value="0.15833333333333333" />
+        <entry key="app/src/main/res/layout/activity_nightly_price.xml" value="0.2050561797752809" />
         <entry key="app/src/main/res/layout/activity_notification.xml" value="0.1762295081967213" />
+        <entry key="app/src/main/res/layout/activity_photo.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_privacy.xml" value="0.18376068376068377" />
+        <entry key="app/src/main/res/layout/activity_property_and_guest.xml" value="0.22741433021806853" />
+        <entry key="app/src/main/res/layout/activity_room_and_spaces.xml" value="0.1815823605706874" />
         <entry key="app/src/main/res/layout/activity_search.xml" value="0.13395638629283488" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.15833333333333333" />
         <entry key="app/src/main/res/layout/activity_stay_who.xml" value="0.18143459915611815" />
@@ -25,6 +37,7 @@
         <entry key="app/src/main/res/layout/activity_when_stay.xml" value="0.18454935622317598" />
         <entry key="app/src/main/res/layout/fragment_account.xml" value="0.1902654867256637" />
         <entry key="app/src/main/res/layout/fragment_best_describe_placeragment.xml" value="0.1853448275862069" />
+        <entry key="app/src/main/res/layout/fragment_booking.xml" value="0.15925925925925927" />
         <entry key="app/src/main/res/layout/fragment_bottom_sheet.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_choose_dates.xml" value="0.12078651685393259" />
         <entry key="app/src/main/res/layout/fragment_how_many_guest.xml" value="0.2" />
@@ -32,6 +45,7 @@
         <entry key="app/src/main/res/layout/fragment_insights.xml" value="0.15833333333333333" />
         <entry key="app/src/main/res/layout/fragment_listing.xml" value="0.2" />
         <entry key="app/src/main/res/layout/fragment_listing2.xml" value="0.18" />
+        <entry key="app/src/main/res/layout/fragment_listing_details.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_mainragment.xml" value="0.14270833333333333" />
         <entry key="app/src/main/res/layout/fragment_menu.xml" value="0.17269076305220885" />
         <entry key="app/src/main/res/layout/fragment_offer_and_update.xml" value="0.19282511210762332" />
@@ -39,8 +53,10 @@
         <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_today.xml" value="0.14270833333333333" />
         <entry key="app/src/main/res/layout/fragment_trips.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/simple_amenities_layout.xml" value="0.2" />
         <entry key="app/src/main/res/layout/simple_best_place_layout.xml" value="0.25" />
         <entry key="app/src/main/res/layout/simple_choose_month_layout.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/simple_cover_img_layout.xml" value="0.25" />
         <entry key="app/src/main/res/layout/simple_item_layout.xml" value="0.4479166666666667" />
         <entry key="app/src/main/res/layout/simple_listing_layout.xml" value="0.22" />
         <entry key="app/src/main/res/layout/simple_main_rv.xml" value="0.14144736842105263" />

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.Host.Activity.ListingDetailsActivity">
+
+
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:id="@+id/backBtn"
+        android:src="@drawable/back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginStart="20dp"
+        android:id="@+id/text1"
+        android:fontFamily="@font/alike"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/backBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Affordable foreign stay \nwith luxury"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:layout_marginStart="20dp"
+        android:id="@+id/listingText"
+        android:textSize="18sp"
+        android:text="Listing"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/text1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:id="@+id/listingView"
+        android:background="@color/black"
+        android:layout_marginTop="7dp"
+        app:layout_constraintTop_toBottomOf="@id/listingText"
+        app:layout_constraintEnd_toEndOf="@id/listingText"
+        app:layout_constraintStart_toStartOf="@id/listingText"
+        android:layout_width="0dp"
+        android:layout_height="2dp"/>
+
+    <TextView
+        android:id="@+id/bookingText"
+        android:textSize="18sp"
+        android:text="Booking settings"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/listingText"
+        app:layout_constraintTop_toTopOf="@id/listingText"
+        app:layout_constraintStart_toEndOf="@id/listingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:visibility="gone"
+        android:id="@+id/bookingView"
+        android:background="@color/black"
+        android:layout_marginTop="7dp"
+        app:layout_constraintTop_toBottomOf="@id/bookingText"
+        app:layout_constraintEnd_toEndOf="@id/bookingText"
+        app:layout_constraintStart_toStartOf="@id/bookingText"
+        android:layout_width="0dp"
+        android:layout_height="2dp"/>
+
+    <View
+        android:id="@+id/view1"
+        android:background="@color/lightGray"
+        android:layout_marginTop="7dp"
+        app:layout_constraintTop_toBottomOf="@id/listingText"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/view1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/listingFrameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

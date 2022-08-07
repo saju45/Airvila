@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:scrollbars="none"
+    tools:context=".Activitys.Host.Fragment.ListingDetailsFragment">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:fontFamily="@font/alike"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="Listing details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="-15dp"
+            android:id="@+id/previewText"
+            android:layout_gravity="end"
+            android:textSize="16sp"
+            android:text="Preview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:textSize="16sp"
+            android:text="Travelers can see this info before they \n book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+
+
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:id="@+id/photoAddedLayout"
+           android:layout_marginTop="10dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+
+           <TextView
+               android:id="@+id/photoText"
+               app:layout_constraintTop_toTopOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               android:textSize="18sp"
+               android:layout_marginTop="10dp"
+               android:text="Photos"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+
+
+           <TextView
+               app:layout_constraintTop_toBottomOf="@id/photoText"
+               app:layout_constraintStart_toStartOf="parent"
+               android:id="@+id/photoCount"
+               android:textSize="14sp"
+               android:layout_marginTop="4dp"
+               android:text="14"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+           <TextView
+               android:text="added"
+               android:layout_marginStart="3dp"
+               android:textSize="14sp"
+               android:layout_marginTop="4dp"
+               app:layout_constraintTop_toBottomOf="@id/photoText"
+               app:layout_constraintStart_toEndOf="@id/photoCount"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+
+       </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="10dp"
+            android:id="@+id/listingDetailsPhotoRv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:background="@color/lightGray"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/listingTitleLayout"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/title"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="Listing title"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="3dp"
+                android:text="Affordable foreign stay with luxury"
+                app:layout_constraintTop_toBottomOf="@id/title"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:background="@color/lightGray"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/descriptionLayout"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="Description"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:background="@color/lightGray"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/roomSpacelayout"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/room"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="Rooms and spaces"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/bedroomCount"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="3dp"
+                android:text="1"
+                app:layout_constraintTop_toBottomOf="@id/room"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/bedroomText"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="3dp"
+                android:text="bedroom,"
+                app:layout_constraintTop_toBottomOf="@id/room"
+                app:layout_constraintStart_toEndOf="@id/bedroomCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:layout_marginStart="2dp"
+                android:id="@+id/bedCount"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="3dp"
+                android:text="1"
+                app:layout_constraintTop_toBottomOf="@id/room"
+                app:layout_constraintStart_toEndOf="@id/bedroomText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:layout_marginStart="2dp"
+                android:id="@+id/bedText"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="3dp"
+                android:text="bed,"
+                app:layout_constraintTop_toBottomOf="@id/room"
+                app:layout_constraintStart_toEndOf="@id/bedCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginStart="2dp"
+                android:id="@+id/bathroomCount"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="3dp"
+                android:text="1"
+                app:layout_constraintTop_toBottomOf="@id/room"
+                app:layout_constraintStart_toEndOf="@id/bedText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:layout_marginStart="2dp"
+                android:id="@+id/bathroomText"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="3dp"
+                android:text="bathroom,"
+                app:layout_constraintTop_toBottomOf="@id/room"
+                app:layout_constraintStart_toEndOf="@id/bathroomCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:layout_marginStart="2dp"
+                android:id="@+id/additionalAreaCount"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="3dp"
+                android:text="5"
+                app:layout_constraintTop_toBottomOf="@id/room"
+                app:layout_constraintStart_toEndOf="@id/bathroomText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginStart="2dp"
+                android:id="@+id/additionalAreaText"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="3dp"
+                android:text="additional areas"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/bedText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:background="@color/lightGray"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/propertyLayout"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/property"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="Property and guest"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/privateRoom"
+                android:text="private room,"
+                android:layout_marginTop="3dp"
+                app:layout_constraintTop_toBottomOf="@id/property"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginStart="2dp"
+                android:id="@+id/rentalUnit"
+                android:text="Rental unit,"
+                android:layout_marginTop="3dp"
+                app:layout_constraintTop_toBottomOf="@id/property"
+                app:layout_constraintStart_toEndOf="@id/privateRoom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+            <TextView
+                android:layout_marginStart="2dp"
+                android:id="@+id/guestCount"
+                android:text="2"
+                android:layout_marginTop="3dp"
+                app:layout_constraintTop_toBottomOf="@id/property"
+                app:layout_constraintStart_toEndOf="@id/rentalUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:layout_marginStart="2dp"
+                android:id="@+id/guestText"
+                android:text="guests"
+                android:layout_marginTop="3dp"
+                app:layout_constraintTop_toBottomOf="@id/property"
+                app:layout_constraintStart_toEndOf="@id/guestCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:background="@color/lightGray"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/amenitiesLayout"
+            android:paddingTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="Amenities"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <View
+            android:background="@color/lightGray"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/accessibilityLayout"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="Accessibility"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <View
+            android:background="@color/lightGray"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/locationLayout"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="Location"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <View
+            android:background="@color/lightGray"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/scenicLayout"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="Scenic views"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:src="@drawable/new_2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <View
+            android:background="@color/lightGray"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/things"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="Things your guests should know"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:textSize="14sp"
+                android:layout_marginTop="3dp"
+                app:layout_constraintTop_toBottomOf="@id/things"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="safety and other considerations"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <View
+            android:background="@color/lightGray"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/guidebookLayout"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="Guidebooks"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <View
+            android:background="@color/lightGray"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/alike"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="Custom Link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:textSize="16sp"
+            android:text="Create a personalized web address\n for your Airbnb listing."
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+        <TextView
+            android:fontFamily="@font/alike"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="Info for guest"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:text="Only shared with confirmed guests"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/wifiLayout"
+            android:paddingTop="15dp"
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="Wifi"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <View
+            android:background="@color/lightGray"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/chekInLayout"
+            android:paddingTop="15dp"
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="Check-in instructions"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <View
+            android:background="@color/lightGray"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/houseLayout"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="House manual"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <View
+            android:background="@color/lightGray"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/directionLayout"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="Directions"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,1384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    tools:context=".Activitys.Host.Activity.RoomAndSpacesActivity">
+
+
+
+    <ScrollView
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@id/bottomLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/backImg"
+                android:src="@drawable/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+            <TextView
+                android:fontFamily="@font/alike"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:text="Rooms and spaces"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:textSize="16sp"
+                android:text="Add or edit areas guests can use and mark\n any space they'll share"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+
+                android:id="@+id/bedroomLayout"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/bedroom"
+                    android:fontFamily="@font/alike"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:text="Bedroom"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textSize="16sp"
+                    android:text="Edit"
+                    app:layout_constraintBottom_toBottomOf="@id/bedroom"
+                    app:layout_constraintTop_toTopOf="@id/bedroom"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    android:textSize="18sp"
+                    android:id="@+id/photoCount"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintTop_toBottomOf="@id/bedroom"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="No"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textSize="18sp"
+                    android:text="photos"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintTop_toBottomOf="@id/bedroom"
+                    android:layout_marginStart="5dp"
+                    app:layout_constraintStart_toEndOf="@id/photoCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            <View
+                android:background="@color/lightGray"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/sharedLayout"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/sharedText"
+                    android:textSize="18sp"
+                    android:text="Shared with others"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <Switch
+                    app:layout_constraintBottom_toBottomOf="@id/sharedText"
+                    app:layout_constraintTop_toTopOf="@id/sharedText"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textSize="16sp"
+                    android:text="Guests might share this space with me,\n other guests, or someone else"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintTop_toBottomOf="@id/sharedText"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:background="@color/lightGray"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/sleepingArrangementLayout"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/sleepArrangement"
+                    android:textSize="18sp"
+                    android:text="Sleeping arrangements"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textColor="#4FDACD"
+                    android:textSize="16sp"
+                    android:text="Edit"
+                    app:layout_constraintBottom_toBottomOf="@id/sleepArrangement"
+                    app:layout_constraintTop_toTopOf="@id/sleepArrangement"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textSize="16sp"
+                    android:text="1 double bed"
+                    android:layout_marginTop="3dp"
+                    app:layout_constraintTop_toBottomOf="@id/sleepArrangement"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:background="@color/lightGray"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/privateAttachedLayout"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:id="@+id/privateAttached"
+                    android:textSize="18sp"
+                    android:text="Has private attached \n bathroom"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <Switch
+                    app:layout_constraintBottom_toBottomOf="@id/privateAttached"
+                    app:layout_constraintTop_toTopOf="@id/privateAttached"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textSize="16sp"
+                    android:text="Attached or en suite bathrooms have a\n private entrance inside the bedroom"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintTop_toBottomOf="@id/privateAttached"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:background="@color/lightGray"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/bedroom2Layout"
+                android:layout_marginTop="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/bedroom2"
+                    android:fontFamily="@font/alike"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:text="Bedroom 2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textSize="16sp"
+                    android:text="Edit"
+                    app:layout_constraintBottom_toBottomOf="@id/bedroom2"
+                    app:layout_constraintTop_toTopOf="@id/bedroom2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    android:textSize="18sp"
+                    android:id="@+id/bedroom2ImgCount"
+                    android:text="No"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintTop_toBottomOf="@id/bedroom2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textSize="18sp"
+                    android:text="Photos"
+                    android:layout_marginStart="5dp"
+                    app:layout_constraintTop_toBottomOf="@id/bedroom2"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintStart_toEndOf="@id/bedroom2ImgCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:background="@color/lightGray"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/sharedWithOtherLayout"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <TextView
+                    android:id="@+id/shared"
+                    android:textSize="18sp"
+                    android:text="Shared with others"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <Switch
+                    app:layout_constraintBottom_toBottomOf="@id/shared"
+                    app:layout_constraintTop_toTopOf="@id/shared"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                   app:layout_constraintTop_toBottomOf="@id/shared"
+                    android:textSize="16sp"
+                    android:text="Guests might share this space with me\n other guests ,or someone else"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            <View
+                android:background="@color/lightGray"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/sleepingArrangement"
+                    android:textSize="18sp"
+                    android:text="Sleeping arrangements"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/sleepingArrangementEt"
+                    android:textColor="#66DFD4"
+                    android:textSize="16sp"
+                    android:text="Edit"
+                    app:layout_constraintBottom_toBottomOf="@id/sleepingArrangement"
+                    app:layout_constraintTop_toTopOf="@id/sleepingArrangement"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    android:textSize="16sp"
+                    android:text="1 double room"
+                    app:layout_constraintTop_toBottomOf="@id/sleepingArrangement"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <View
+                android:background="@color/lightGray"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/privateAttachedLayout2"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:id="@+id/privateAttached2"
+                    android:textSize="18sp"
+                    android:text="Has private attached \n bathroom"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <Switch
+                    app:layout_constraintBottom_toBottomOf="@id/privateAttached2"
+                    app:layout_constraintTop_toTopOf="@id/privateAttached2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textSize="16sp"
+                    android:text="Attached or en suite bathrooms have a\n private entrance inside the bedroom"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintTop_toBottomOf="@id/privateAttached2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:background="@color/lightGray"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+
+                android:id="@+id/fullBathroomLayout"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/fullbedroom"
+                    android:fontFamily="@font/alike"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:text="Full Bathroom"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textSize="16sp"
+                    android:text="Edit"
+                    app:layout_constraintBottom_toBottomOf="@id/fullbedroom"
+                    app:layout_constraintTop_toTopOf="@id/fullbedroom"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    android:textSize="18sp"
+                    android:id="@+id/fullbedroomphotoCount"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintTop_toBottomOf="@id/fullbedroom"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="No"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textSize="18sp"
+                    android:text="photos"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintTop_toBottomOf="@id/fullbedroom"
+                    android:layout_marginStart="5dp"
+                    app:layout_constraintStart_toEndOf="@id/fullbedroomphotoCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            <View
+                android:background="@color/lightGray"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/fullBathroomsharedLayout"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/fullbedroomsharedText"
+                    android:textSize="18sp"
+                    android:text="Shared with others"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <Switch
+                    app:layout_constraintBottom_toBottomOf="@id/fullbedroomsharedText"
+                    app:layout_constraintTop_toTopOf="@id/fullbedroomsharedText"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textSize="16sp"
+                    android:text="Guests might share this space with me,\n other guests, or someone else"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintTop_toBottomOf="@id/fullbedroomsharedText"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:background="@color/lightGray"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+
+                android:id="@+id/fulllBathroom2Layout"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/fullBathroom2"
+                    android:fontFamily="@font/alike"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:text="Full Bathroom 2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textSize="16sp"
+                    android:text="Edit"
+                    app:layout_constraintBottom_toBottomOf="@id/fullBathroom2"
+                    app:layout_constraintTop_toTopOf="@id/fullBathroom2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    android:textSize="18sp"
+                    android:id="@+id/fullBathrromPhotoCount"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintTop_toBottomOf="@id/fullBathroom2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="No"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textSize="18sp"
+                    android:text="photos"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintTop_toBottomOf="@id/fullBathroom2"
+                    android:layout_marginStart="5dp"
+                    app:layout_constraintStart_toEndOf="@id/fullBathrromPhotoCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            <View
+                android:background="@color/lightGray"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/fullBathroom2sharedLayout"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/fullBathroom2sharedText"
+                    android:textSize="18sp"
+                    android:text="Shared with others"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <Switch
+                    app:layout_constraintBottom_toBottomOf="@id/fullBathroom2sharedText"
+                    app:layout_constraintTop_toTopOf="@id/fullBathroom2sharedText"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textSize="16sp"
+                    android:text="Guests might share this space with me,\n other guests, or someone else"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintTop_toBottomOf="@id/fullBathroom2sharedText"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:background="@color/lightGray"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+
+                android:id="@+id/fullKitchenLayout"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/fullKitchen"
+                    android:fontFamily="@font/alike"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:text="Full Kitchen"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textSize="16sp"
+                    android:text="Edit"
+                    app:layout_constraintBottom_toBottomOf="@id/fullKitchen"
+                    app:layout_constraintTop_toTopOf="@id/fullKitchen"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    android:textSize="18sp"
+                    android:id="@+id/fullKitchenPhotoCount"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintTop_toBottomOf="@id/fullKitchen"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="No"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textSize="18sp"
+                    android:text="photos"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintTop_toBottomOf="@id/fullKitchen"
+                    android:layout_marginStart="5dp"
+                    app:layout_constraintStart_toEndOf="@id/fullKitchenPhotoCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            <View
+                android:background="@color/lightGray"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/fullKitchensharedLayout"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/fullKitchensharedText"
+                    android:textSize="18sp"
+                    android:text="Shared with others"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <Switch
+                    app:layout_constraintBottom_toBottomOf="@id/fullKitchensharedText"
+                    app:layout_constraintTop_toTopOf="@id/fullKitchensharedText"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textSize="16sp"
+                    android:text="Guests might share this space with me,\n other guests, or someone else"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintTop_toBottomOf="@id/fullKitchensharedText"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:background="@color/lightGray"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+
+                android:id="@+id/livingRoomLayout"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/livingRoom"
+                    android:fontFamily="@font/alike"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:text="Living room "
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textSize="16sp"
+                    android:text="Edit"
+                    app:layout_constraintBottom_toBottomOf="@id/livingRoom"
+                    app:layout_constraintTop_toTopOf="@id/livingRoom"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    android:textSize="18sp"
+                    android:id="@+id/livingRoomPhotoCount"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintTop_toBottomOf="@id/livingRoom"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="No"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textSize="18sp"
+                    android:text="photos"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintTop_toBottomOf="@id/livingRoom"
+                    android:layout_marginStart="5dp"
+                    app:layout_constraintStart_toEndOf="@id/livingRoomPhotoCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            <View
+                android:background="@color/lightGray"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/livingRoomsharedLayout"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/livingRoomsharedText"
+                    android:textSize="18sp"
+                    android:text="Shared with others"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <Switch
+                    app:layout_constraintBottom_toBottomOf="@id/livingRoomsharedText"
+                    app:layout_constraintTop_toTopOf="@id/livingRoomsharedText"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textSize="16sp"
+                    android:text="Guests might share this space with me,\n other guests, or someone else"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintTop_toBottomOf="@id/livingRoomsharedText"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:background="@color/lightGray"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="18sp"
+                    android:id="@+id/text1"
+                    android:text="Sleeping arrangements"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textColor="#3DA7B5"
+                    android:textSize="18sp"
+                    android:text="Add"
+                    app:layout_constraintBottom_toBottomOf="@id/text1"
+                    app:layout_constraintTop_toTopOf="@id/text1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <View
+                android:background="@color/lightGray"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+
+                android:id="@+id/diningRoomLayout"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/diningRoom"
+                    android:fontFamily="@font/alike"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:text="Dining area "
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textSize="16sp"
+                    android:text="Edit"
+                    app:layout_constraintBottom_toBottomOf="@id/diningRoom"
+                    app:layout_constraintTop_toTopOf="@id/diningRoom"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    android:textSize="18sp"
+                    android:id="@+id/diningRoomPhotoCount"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintTop_toBottomOf="@id/diningRoom"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="No"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textSize="18sp"
+                    android:text="photos"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintTop_toBottomOf="@id/diningRoom"
+                    android:layout_marginStart="5dp"
+                    app:layout_constraintStart_toEndOf="@id/diningRoomPhotoCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            <View
+                android:background="@color/lightGray"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/diningRoomsharedLayout"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/diningRoomsharedText"
+                    android:textSize="18sp"
+                    android:text="Shared with others"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <Switch
+                    app:layout_constraintBottom_toBottomOf="@id/diningRoomsharedText"
+                    app:layout_constraintTop_toTopOf="@id/diningRoomsharedText"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textSize="16sp"
+                    android:text="Guests might share this space with me,\n other guests, or someone else"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintTop_toBottomOf="@id/diningRoomsharedText"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:background="@color/lightGray"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+
+
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+
+                android:id="@+id/kitchenLayout"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/kitchen"
+                    android:fontFamily="@font/alike"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:text="Kitchenette "
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textSize="16sp"
+                    android:text="Edit"
+                    app:layout_constraintBottom_toBottomOf="@id/kitchen"
+                    app:layout_constraintTop_toTopOf="@id/kitchen"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    android:textSize="18sp"
+                    android:id="@+id/kitchenPhotoCount"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintTop_toBottomOf="@id/kitchen"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="No"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textSize="18sp"
+                    android:text="photos"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintTop_toBottomOf="@id/kitchen"
+                    android:layout_marginStart="5dp"
+                    app:layout_constraintStart_toEndOf="@id/kitchenPhotoCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            <View
+                android:background="@color/lightGray"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/kitchensharedLayout"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/kitchensharedText"
+                    android:textSize="18sp"
+                    android:text="Shared with others"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <Switch
+                    app:layout_constraintBottom_toBottomOf="@id/kitchensharedText"
+                    app:layout_constraintTop_toTopOf="@id/kitchensharedText"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textSize="16sp"
+                    android:text="Guests might share this space with me,\n other guests, or someone else"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintTop_toBottomOf="@id/kitchensharedText"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:background="@color/lightGray"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+
+                android:id="@+id/fullBathroom3Layout"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/fullBathroom3"
+                    android:fontFamily="@font/alike"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:text="Full bathroom 3 "
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textSize="16sp"
+                    android:text="Edit"
+                    app:layout_constraintBottom_toBottomOf="@id/fullBathroom3"
+                    app:layout_constraintTop_toTopOf="@id/fullBathroom3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    android:textSize="18sp"
+                    android:id="@+id/fullBathroom3PhotoCount"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintTop_toBottomOf="@id/fullBathroom3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="No"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textSize="18sp"
+                    android:text="photos"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintTop_toBottomOf="@id/fullBathroom3"
+                    android:layout_marginStart="5dp"
+                    app:layout_constraintStart_toEndOf="@id/fullBathroom3PhotoCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            <View
+                android:background="@color/lightGray"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/fullBathroom3sharedLayout"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/fullBathroom3sharedText"
+                    android:textSize="18sp"
+                    android:text="Shared with others"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <Switch
+                    app:layout_constraintBottom_toBottomOf="@id/fullBathroom3sharedText"
+                    app:layout_constraintTop_toTopOf="@id/fullBathroom3sharedText"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textSize="16sp"
+                    android:text="Guests might share this space with me,\n other guests, or someone else"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintTop_toBottomOf="@id/fullBathroom3sharedText"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:background="@color/lightGray"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/alike"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:text="For any of the spaces \n you've marked as shared, \n who else might be there"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textSize="14sp"
+                android:text="Include anyone who might also user or be in the space."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/meLayout"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/meText"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:textSize="18sp"
+                    android:text="Me"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <Switch
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:background="@color/lightGray"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/familyFriendLayout"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/familyText"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:textSize="18sp"
+                    android:text="Family,friend, or roommates"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <Switch
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:background="@color/lightGray"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/otherGuestLayout"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/otherGuestText"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:textSize="18sp"
+                    android:text="Other guests"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <Switch
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:background="@color/lightGray"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottomLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/saveBtn"
+            android:text="save"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_bg"
+            android:backgroundTint="#4CAF50"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textColor="#4CAF50"
+            android:textSize="16sp"
+            android:layout_marginStart="10dp"
+            android:text="Add or edit rooms"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

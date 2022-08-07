@@ -17,6 +17,36 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".Activitys.Host.Activity.AccessibilityActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.Host.Activity.AmenitiesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.Host.Activity.NIghtlyPriceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.Host.Activity.PropertyAndGuestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.Host.Activity.RoomAndSpacesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.Host.Activity.DescriptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.Host.Activity.ListTitleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.Host.Activity.ChangeCoverImgActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.Host.Activity.PhotoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.Host.Activity.ListingDetailsActivity"
+            android:exported="false" />
+        <activity
             android:name=".Activitys.Host.Activity.WelcomeActivity"
             android:exported="false" />
         <activity

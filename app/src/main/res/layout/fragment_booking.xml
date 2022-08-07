@@ -1,0 +1,996 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activitys.Host.Fragment.BookingFragment">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <TextView
+            android:fontFamily="@font/alike"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="Pricing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/bedLayout"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/preview"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="Preview what gusts pay"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:id="@+id/image"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bed_img"
+                app:layout_constraintTop_toBottomOf="@id/preview"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="60dp"
+                android:layout_height="50dp"/>
+
+            <TextView
+                android:id="@+id/dolar"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:text="$"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/preview"
+                app:layout_constraintStart_toEndOf="@id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginStart="2dp"
+                android:id="@+id/bedPrice"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:text="42"
+                app:layout_constraintBottom_toBottomOf="@id/dolar"
+                app:layout_constraintTop_toTopOf="@id/dolar"
+                app:layout_constraintStart_toEndOf="@id/dolar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginStart="2dp"
+                android:id="@+id/bedTotal"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:text="total"
+                app:layout_constraintBottom_toBottomOf="@id/dolar"
+                app:layout_constraintTop_toTopOf="@id/dolar"
+                app:layout_constraintStart_toEndOf="@id/bedPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/nightCount"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:text="2"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/dolar"
+                app:layout_constraintStart_toEndOf="@id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:id="@+id/nightText"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:text="nights. "
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/dolar"
+                app:layout_constraintStart_toEndOf="@id/nightCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/guestCount"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:text="1 "
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/dolar"
+                app:layout_constraintStart_toEndOf="@id/nightText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/guestText"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:text="guest "
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/dolar"
+                app:layout_constraintStart_toEndOf="@id/guestCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardNew"
+                android:layout_marginTop="3dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginEnd="10dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                android:elevation="4dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:paddingStart="7dp"
+                    android:paddingEnd="7dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:background="#D5CFCF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:text="New"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        <View
+            android:background="@color/lightGray"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/nightlyLayout"
+            android:paddingTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="Nightly Price"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+            <ImageView
+                android:src="@drawable/right_arrow3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <View
+            android:background="@color/lightGray"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/additionalLayout"
+            android:paddingTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="Additional charges"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+            <ImageView
+                android:src="@drawable/right_arrow3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <View
+            android:background="@color/lightGray"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/currencyLayout"
+            android:paddingTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="Currency"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+            <ImageView
+                android:src="@drawable/right_arrow3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <View
+            android:background="@color/lightGray"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/listingPriceLayout"
+            android:paddingTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/listingPrice"
+                android:textSize="14sp"
+                android:text="You are responsible for choosing the listing price"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/learMore"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:text="Learn more"
+                android:layout_marginTop="3dp"
+                app:layout_constraintTop_toBottomOf="@id/listingPrice"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <View
+                android:background="@color/black"
+                app:layout_constraintTop_toBottomOf="@id/learMore"
+                app:layout_constraintEnd_toEndOf="@id/learMore"
+                app:layout_constraintStart_toStartOf="@id/learMore"
+                android:layout_width="0dp"
+                android:layout_height="1dp"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <View
+            android:layout_marginTop="20dp"
+            android:background="@color/lightGray"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"/>
+
+
+        <TextView
+            android:fontFamily="@font/alike"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:text="Booking"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/bookLyout"
+            android:paddingTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/book"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="How guest can book"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textSize="14sp"
+                android:text="Instant book off"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/book"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <ImageView
+                android:src="@drawable/right_arrow3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardLearMore"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            app:cardElevation="5dp"
+            android:elevation="4dp"
+            android:padding="10dp"
+            app:cardCornerRadius="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="14sp"
+                    android:id="@+id/text1"
+                    android:text="Guests love the convenience of booking instantly, so hosts often get double the reservations "
+                    android:layout_marginStart="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    android:id="@+id/learMore2"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:text="Learn more"
+                    android:layout_marginTop="-7dp"
+                    android:layout_marginStart="5dp"
+                    app:layout_constraintTop_toBottomOf="@id/text1"
+                    app:layout_constraintStart_toEndOf="@id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:background="@color/black"
+                    app:layout_constraintTop_toBottomOf="@id/learMore2"
+                    app:layout_constraintEnd_toEndOf="@id/learMore2"
+                    app:layout_constraintStart_toStartOf="@id/learMore2"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/guestRequirementsLayout"
+            android:paddingTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="Guest requirements"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+            <ImageView
+                android:src="@drawable/right_arrow3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <View
+            android:background="@color/lightGray"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/homeRulesLayout"
+            android:paddingTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="House rules"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+            <ImageView
+                android:src="@drawable/right_arrow3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <View
+            android:background="@color/lightGray"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/policyLayout"
+            android:paddingTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="Cancellation policy"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+            <ImageView
+                android:src="@drawable/right_arrow3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:layout_marginTop="15dp"
+            android:background="@color/lightGray"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"/>
+
+
+        <TextView
+            android:fontFamily="@font/alike"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:text="Calendar"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/availabilitySettingLyout"
+            android:paddingTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/availabilityText"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="Availability Setting"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/advanceNt"
+                android:textSize="14sp"
+                android:text="advance notice: 1day"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/availabilityText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/PreparationTime"
+                android:text="Preparation time : noe"
+                app:layout_constraintTop_toBottomOf="@id/advanceNt"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:id="@+id/availabilityWindow"
+                android:text="Availability 3 months"
+                app:layout_constraintTop_toBottomOf="@id/PreparationTime"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:src="@drawable/right_arrow3"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/calendarLearnMore"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            app:cardElevation="5dp"
+            android:elevation="4dp"
+            android:padding="10dp"
+            app:cardCornerRadius="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="14sp"
+                    android:id="@+id/text2"
+                    android:text="Your availability setting can help you get reservations that fit your hosting schedule."
+                    android:layout_marginStart="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    android:id="@+id/learMore3"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:text="Learn more"
+                    android:layout_marginTop="-7dp"
+                    android:layout_marginStart="5dp"
+                    app:layout_constraintTop_toBottomOf="@id/text2"
+                    app:layout_constraintStart_toEndOf="@id/text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:background="@color/black"
+                    app:layout_constraintTop_toBottomOf="@id/learMore3"
+                    app:layout_constraintEnd_toEndOf="@id/learMore3"
+                    app:layout_constraintStart_toStartOf="@id/learMore3"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:background="@color/lightGray"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/tripLengthLayout"
+            android:paddingTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/trip"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="Trip length"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/minimumStay"
+                android:textSize="14sp"
+                android:text="Minimum stay: 2 nights"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/trip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/maximumStay"
+                android:text="Maximum stay : 150 nights"
+                app:layout_constraintTop_toBottomOf="@id/minimumStay"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+
+
+            <ImageView
+                android:layout_marginTop="7dp"
+                android:src="@drawable/right_arrow3"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <View
+            android:background="@color/lightGray"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/checkInCheckOut"
+            android:paddingTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/check"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="Check-in And checkout"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/checkInTime"
+                android:textSize="14sp"
+                android:text="Check-in time : Flexible-flexible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/checkOutTime"
+                android:text="Checkout time : 11:00 AM"
+                app:layout_constraintTop_toBottomOf="@id/checkInTime"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+
+
+            <ImageView
+                android:layout_marginTop="7dp"
+                android:src="@drawable/right_arrow3"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <View
+            android:background="@color/lightGray"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linkAirbnb"
+            android:paddingTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/link"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="Linked Airbnb calendars for this listing"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+
+                android:id="@+id/noLink"
+                android:textSize="14sp"
+                android:text="No linked calendars for this listing"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:src="@drawable/right_arrow3"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <View
+            android:background="@color/lightGray"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"/>
+
+
+
+        <TextView
+            android:fontFamily="@font/alike"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="Management"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/coHostsLayout"
+            android:paddingTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/coHost"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="Co-Hosts"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+
+            <ImageView
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:src="@drawable/right_arrow3"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <View
+            android:background="@color/lightGray"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/localLawsLayout"
+            android:paddingTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/local"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="Local lawas"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+
+            <ImageView
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:src="@drawable/right_arrow3"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <View
+            android:background="@color/lightGray"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/statusLayout"
+            android:paddingTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/status"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="Status"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+            <TextView
+                android:text="Unlisted-Guests can't book this listing or \n find it in search results"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+            <ImageView
+                android:layout_marginTop="7dp"
+                android:src="@drawable/right_arrow3"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

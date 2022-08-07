@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".Activitys.Host.Activity.DescriptionActivity">
+
+
+  <LinearLayout
+      android:layout_marginTop="20dp"
+      android:layout_marginStart="20dp"
+      android:layout_marginEnd="20dp"
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+
+
+    <ImageView
+        android:id="@+id/backImg"
+        android:src="@drawable/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:fontFamily="@font/alike"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="25dp"
+        android:text="Description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/summaryLayout"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+      <TextView
+          android:id="@+id/summary"
+          android:textSize="18sp"
+          android:text="Summary"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+
+      <TextView
+          android:id="@+id/summaryEt"
+          android:textSize="18sp"
+          android:textColor="#4CAF50"
+          android:text="Edit"
+          app:layout_constraintBottom_toBottomOf="@id/summary"
+          app:layout_constraintTop_toTopOf="@id/summary"
+          app:layout_constraintEnd_toEndOf="parent"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+
+      <TextView
+          android:id="@+id/summaryDetails"
+          android:layout_marginEnd="30dp"
+          android:lines="2"
+          android:text="this is well lighted and newly furnishsed room n the apartment it is decorated"
+          android:layout_marginTop="3dp"
+          android:textSize="16sp"
+          app:layout_constraintEnd_toStartOf="@id/summaryEt"
+          app:layout_constraintTop_toBottomOf="@id/summary"
+          app:layout_constraintStart_toStartOf="parent"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:backgroundTint="@color/lightGray"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+
+    <TextView
+        android:fontFamily="@font/alike"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:text="Your place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/spaceLayout"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+      <TextView
+          android:id="@+id/space"
+          android:textSize="18sp"
+          android:text="The space"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+
+      <TextView
+          android:id="@+id/spaceEt"
+          android:textSize="18sp"
+          android:textColor="#4CAF50"
+          android:text="Edit"
+          app:layout_constraintBottom_toBottomOf="@id/space"
+          app:layout_constraintTop_toTopOf="@id/space"
+          app:layout_constraintEnd_toEndOf="parent"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+
+      <TextView
+          android:id="@+id/spaceDetails"
+          android:layout_marginEnd="30dp"
+          android:lines="2"
+          android:text="this is well lighted and newly furnishsed room n the apartment it is decorated"
+          android:layout_marginTop="3dp"
+          android:textSize="16sp"
+          app:layout_constraintEnd_toStartOf="@id/spaceEt"
+          app:layout_constraintTop_toBottomOf="@id/space"
+          app:layout_constraintStart_toStartOf="parent"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:backgroundTint="@color/lightGray"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/guestLayout"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+      <TextView
+          android:id="@+id/guest"
+          android:textSize="18sp"
+          android:text="Guest access"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+
+      <TextView
+          android:id="@+id/guestEt"
+          android:textSize="18sp"
+          android:textColor="#4CAF50"
+          android:text="Edit"
+          app:layout_constraintBottom_toBottomOf="@id/guest"
+          app:layout_constraintTop_toTopOf="@id/guest"
+          app:layout_constraintEnd_toEndOf="parent"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+
+      <TextView
+          android:id="@+id/guestDetails"
+          android:layout_marginEnd="30dp"
+          android:lines="2"
+          android:text="this is well lighted and newly furnishsed room n the apartment it is decorated"
+          android:layout_marginTop="3dp"
+          android:textSize="16sp"
+          app:layout_constraintEnd_toStartOf="@id/guestEt"
+          app:layout_constraintTop_toBottomOf="@id/guest"
+          app:layout_constraintStart_toStartOf="parent"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:backgroundTint="@color/lightGray"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/guestInteractionLayout"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+      <TextView
+          android:id="@+id/guestInteraction"
+          android:textSize="18sp"
+          android:text="Guest access"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+
+      <TextView
+          android:id="@+id/guestInteractionEt"
+          android:textSize="18sp"
+          android:textColor="#4CAF50"
+          android:text="Edit"
+          app:layout_constraintBottom_toBottomOf="@id/guestInteraction"
+          app:layout_constraintTop_toTopOf="@id/guestInteraction"
+          app:layout_constraintEnd_toEndOf="parent"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+
+      <TextView
+          android:id="@+id/guestInteractionDetails"
+          android:layout_marginEnd="30dp"
+          android:lines="2"
+          android:text="this is well lighted and newly furnishsed room n the apartment it is decorated"
+          android:layout_marginTop="3dp"
+          android:textSize="16sp"
+          app:layout_constraintEnd_toStartOf="@id/guestInteractionEt"
+          app:layout_constraintTop_toBottomOf="@id/guestInteraction"
+          app:layout_constraintStart_toStartOf="parent"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:backgroundTint="@color/lightGray"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/otherNotesLayout"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+      <TextView
+          android:id="@+id/OtherNote"
+          android:textSize="18sp"
+          android:text="Other notes"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+
+      <TextView
+          android:id="@+id/OtherNoteEt"
+          android:textSize="18sp"
+          android:textColor="#4CAF50"
+          android:text="Edit"
+          app:layout_constraintBottom_toBottomOf="@id/OtherNote"
+          app:layout_constraintTop_toTopOf="@id/OtherNote"
+          app:layout_constraintEnd_toEndOf="parent"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+
+      <TextView
+          android:id="@+id/OtherNoteDetails"
+          android:layout_marginEnd="30dp"
+          android:lines="2"
+          android:text="this is well lighted and newly furnishsed room n the apartment it is decorated"
+          android:layout_marginTop="3dp"
+          android:textSize="16sp"
+          app:layout_constraintEnd_toStartOf="@id/OtherNoteEt"
+          app:layout_constraintTop_toBottomOf="@id/OtherNote"
+          app:layout_constraintStart_toStartOf="parent"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:backgroundTint="@color/lightGray"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+
+    <TextView
+        android:fontFamily="@font/alike"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:text="The neighborhood"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/overviewLayout"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+      <TextView
+          android:id="@+id/overview"
+          android:textSize="18sp"
+          android:text="Overview"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+
+      <TextView
+          android:id="@+id/overviewEt"
+          android:textSize="18sp"
+          android:textColor="#4CAF50"
+          android:text="Edit"
+          app:layout_constraintBottom_toBottomOf="@id/overview"
+          app:layout_constraintTop_toTopOf="@id/overview"
+          app:layout_constraintEnd_toEndOf="parent"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+
+      <TextView
+          android:id="@+id/overviewDetails"
+          android:layout_marginEnd="30dp"
+          android:lines="2"
+          android:text="this is well lighted and newly furnishsed room n the apartment it is decorated"
+          android:layout_marginTop="3dp"
+          android:textSize="16sp"
+          app:layout_constraintEnd_toStartOf="@id/overviewEt"
+          app:layout_constraintTop_toBottomOf="@id/overview"
+          app:layout_constraintStart_toStartOf="parent"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:backgroundTint="@color/lightGray"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/gettingAroundLayout"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+      <TextView
+          android:id="@+id/gettingAround"
+          android:textSize="18sp"
+          android:text="Getting around"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+
+      <TextView
+          android:id="@+id/gettingAroundEt"
+          android:textSize="18sp"
+          android:textColor="#4CAF50"
+          android:text="Edit"
+          app:layout_constraintBottom_toBottomOf="@id/gettingAround"
+          app:layout_constraintTop_toTopOf="@id/gettingAround"
+          app:layout_constraintEnd_toEndOf="parent"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+
+      <TextView
+          android:id="@+id/gettingAroundDetails"
+          android:layout_marginEnd="30dp"
+          android:lines="2"
+          android:text="this is well lighted and newly furnishsed room n the apartment it is decorated"
+          android:layout_marginTop="3dp"
+          android:textSize="16sp"
+          app:layout_constraintEnd_toStartOf="@id/gettingAroundEt"
+          app:layout_constraintTop_toBottomOf="@id/gettingAround"
+          app:layout_constraintStart_toStartOf="parent"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <TextView
+        android:textSize="14sp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+
+
+  </LinearLayout>
+
+
+
+
+
+
+</ScrollView>
