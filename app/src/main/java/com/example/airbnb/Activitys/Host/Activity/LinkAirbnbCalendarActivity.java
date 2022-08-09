@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import com.example.airbnb.R;
 
-public class NIghtlyPriceActivity extends AppCompatActivity {
+public class LinkAirbnbCalendarActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_nightly_price);
+        setContentView(R.layout.activity_link_airbnb_calendar);
     }
 }

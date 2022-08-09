@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.airbnb">
+    package="com.example.airbnb" >
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -15,15 +15,81 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Airbnb"
         android:usesCleartextTraffic="true"
-        tools:targetApi="31">
+        tools:targetApi="31" >
+        <activity
+            android:name=".Activitys.Host.Activity.LinkAirbnbCalendarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.Host.Activity.CheckInSettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.Host.Activity.TripLengthActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.Host.Activity.HelpfulRulesCalendarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.Host.Activity.AvailablilitySettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.Host.Activity.CancellationPolicyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.Host.Activity.HouseRulesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.Host.Activity.GuestRequrmentsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.Host.Activity.WhoCanBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.Host.Activity.GuestBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.Host.Activity.AboutPricingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.Host.Activity.CurrencyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.Host.Activity.LengthActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.Host.Activity.AdditionalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.Host.Activity.NightlyPriceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.Host.Activity.PrevieWhatGuestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.Host.Activity.HouseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.Host.Activity.CheckInInstructionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.Host.Activity.WifiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.Host.Activity.CustomLinkActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.Host.Activity.GuideBooksActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.Host.Activity.HightlightSafetyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.Host.Activity.ScenicViewsActivity"
+            android:exported="false" />
         <activity
             android:name=".Activitys.Host.Activity.AccessibilityActivity"
             android:exported="false" />
         <activity
             android:name=".Activitys.Host.Activity.AmenitiesActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Activitys.Host.Activity.NIghtlyPriceActivity"
             android:exported="false" />
         <activity
             android:name=".Activitys.Host.Activity.PropertyAndGuestActivity"
@@ -90,7 +156,7 @@
             android:exported="true" />
         <activity
             android:name=".Activitys.Activity.MainActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

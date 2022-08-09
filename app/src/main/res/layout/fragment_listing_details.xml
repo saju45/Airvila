@@ -470,6 +470,7 @@
             android:layout_height="1dp"/>
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/thingsLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -540,6 +541,7 @@
 
 
         <TextView
+            android:id="@+id/customLinkDescription"
             android:textSize="16sp"
             android:text="Create a personalized web address\n for your Airbnb listing."
             android:layout_marginTop="10dp"

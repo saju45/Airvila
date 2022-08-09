@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.Host.Activity.PrevieWhatGuestActivity">
+
+
+
+    <ImageView
+        android:id="@+id/backBtn"
+        android:src="@drawable/back"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/header"
+        android:fontFamily="@font/alike"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:text="Preview what guest pay"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintTop_toBottomOf="@id/backBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/headerDescription"
+        android:layout_marginEnd="20dp"
+        android:textSize="16sp"
+        android:text="Select any combination of nights, guests, and pets and we'll show you the final price."
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <HorizontalScrollView
+        android:id="@+id/scrollView"
+        android:scrollbars="none"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/headerDescription"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+      <LinearLayout
+          android:layout_marginStart="20dp"
+          android:orientation="horizontal"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+
+
+          <androidx.constraintlayout.widget.ConstraintLayout
+              android:id="@+id/nighLayout"
+              android:padding="10dp"
+              android:background="@drawable/search_bg"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+              <TextView
+                  android:layout_marginStart="10dp"
+                  android:id="@+id/nightCount"
+                  android:textColor="@color/black"
+                  android:textSize="18sp"
+                  android:text="2"
+                  app:layout_constraintBottom_toBottomOf="parent"
+                  app:layout_constraintTop_toTopOf="parent"
+                  app:layout_constraintStart_toStartOf="parent"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"/>
+
+              <TextView
+                  android:id="@+id/nightText"
+                  android:textColor="@color/black"
+                  android:textSize="16sp"
+                  android:text="night"
+                  android:layout_marginStart="7dp"
+                  app:layout_constraintBottom_toBottomOf="parent"
+                  app:layout_constraintTop_toTopOf="parent"
+                  app:layout_constraintStart_toEndOf="@id/nightCount"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"/>
+
+
+              <ImageView
+                  android:src="@drawable/down_arrow"
+                  app:layout_constraintBottom_toBottomOf="parent"
+                  app:layout_constraintTop_toTopOf="parent"
+                  android:layout_marginStart="10dp"
+                  app:layout_constraintStart_toEndOf="@id/nightText"
+                  android:layout_width="20dp"
+                  android:layout_height="20dp"/>
+
+          </androidx.constraintlayout.widget.ConstraintLayout>
+
+          <androidx.constraintlayout.widget.ConstraintLayout
+              android:layout_marginStart="10dp"
+              android:id="@+id/guestLayout"
+              android:padding="10dp"
+              android:background="@drawable/search_bg"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+              <TextView
+                  android:layout_marginStart="10dp"
+                  android:id="@+id/guestCount"
+                  android:textColor="@color/black"
+                  android:textSize="18sp"
+                  android:text="1"
+                  app:layout_constraintBottom_toBottomOf="parent"
+                  app:layout_constraintTop_toTopOf="parent"
+                  app:layout_constraintStart_toStartOf="parent"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"/>
+
+              <TextView
+                  android:id="@+id/guestText"
+                  android:textColor="@color/black"
+                  android:textSize="16sp"
+                  android:text="guest"
+                  android:layout_marginStart="7dp"
+                  app:layout_constraintBottom_toBottomOf="parent"
+                  app:layout_constraintTop_toTopOf="parent"
+                  app:layout_constraintStart_toEndOf="@id/guestCount"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"/>
+
+
+              <ImageView
+                  android:src="@drawable/down_arrow"
+                  app:layout_constraintBottom_toBottomOf="parent"
+                  app:layout_constraintTop_toTopOf="parent"
+                  android:layout_marginStart="10dp"
+                  app:layout_constraintStart_toEndOf="@id/guestText"
+                  android:layout_width="20dp"
+                  android:layout_height="20dp"/>
+
+          </androidx.constraintlayout.widget.ConstraintLayout>
+
+          <androidx.constraintlayout.widget.ConstraintLayout
+              android:layout_marginStart="10dp"
+              android:id="@+id/petsLayout"
+              android:padding="10dp"
+              android:background="@drawable/search_bg"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+              <TextView
+                  android:layout_marginStart="10dp"
+                  android:id="@+id/petCount"
+                  android:textColor="@color/black"
+                  android:textSize="18sp"
+                  android:text="No"
+                  app:layout_constraintBottom_toBottomOf="parent"
+                  app:layout_constraintTop_toTopOf="parent"
+                  app:layout_constraintStart_toStartOf="parent"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"/>
+
+              <TextView
+                  android:id="@+id/petsText"
+                  android:textColor="@color/black"
+                  android:textSize="16sp"
+                  android:text="pets"
+                  android:layout_marginStart="7dp"
+                  app:layout_constraintBottom_toBottomOf="parent"
+                  app:layout_constraintTop_toTopOf="parent"
+                  app:layout_constraintStart_toEndOf="@id/petCount"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"/>
+
+
+              <ImageView
+                  android:src="@drawable/down_arrow"
+                  app:layout_constraintBottom_toBottomOf="parent"
+                  app:layout_constraintTop_toTopOf="parent"
+                  android:layout_marginStart="10dp"
+                  app:layout_constraintStart_toEndOf="@id/petsText"
+                  android:layout_width="20dp"
+                  android:layout_height="20dp"/>
+
+          </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+      </LinearLayout>
+
+
+
+    </HorizontalScrollView>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/night2Layout"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:id="@+id/nightPrice"
+            android:text="$24"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginStart="3dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:id="@+id/into"
+            android:text="x"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/nightPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginStart="3dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:id="@+id/nightCount2"
+            android:text="2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/into"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginStart="3dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:id="@+id/nightText2"
+            android:text="nights"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/nightCount2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:layout_marginStart="3dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:id="@+id/nightTotalPrice"
+            android:text="$48"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+        <TextView
+            android:textSize="16sp"
+            android:text="Smart Pricing average "
+            android:layout_marginTop="4dp"
+            app:layout_constraintTop_toBottomOf="@id/nightPrice"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:layout_marginStart="20dp"
+        android:id="@+id/cleaningFree"
+        android:textSize="16sp"
+        android:text="Cleaning free"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/night2Layout"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/cleaningPrice"
+        android:layout_marginEnd="20dp"
+        android:text="$9"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/cleaningFree"
+        app:layout_constraintTop_toTopOf="@id/cleaningFree"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/guestService"
+        android:layout_marginStart="20dp"
+        android:textSize="16sp"
+        android:text="Guest service free"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/cleaningFree"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:text="$8"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/guestService"
+        app:layout_constraintTop_toTopOf="@id/guestService"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+    <View
+        android:id="@+id/view1"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@color/lightGray"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/guestService"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:id="@+id/totalText"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:text="Total"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/view1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginEnd="20dp"
+        android:text="$65"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/totalText"
+        app:layout_constraintTop_toTopOf="@id/totalText"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/earnigText"
+        android:textSize="16sp"
+        android:text="Your earnings"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/totalText"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textColor="@color/black"
+        android:text="$55"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/earnigText"
+        app:layout_constraintTop_toTopOf="@id/earnigText"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/closeBtn"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Close"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_bg"
+        android:backgroundTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <View
+        android:background="@color/lightGray"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@id/closeBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

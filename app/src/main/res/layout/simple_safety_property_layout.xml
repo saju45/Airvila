@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/safetyAndProperty"
+            android:fontFamily="@font/alike"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:text="Highlight safety and \nproperty info"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/description"
+            android:textSize="16sp"
+            android:text="This cover questions a guest may have before they're ready to book-and helps avoid surprises late on"
+            android:layout_marginTop="7dp"
+            app:layout_constraintTop_toBottomOf="@id/safetyAndProperty"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/guestText"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:text="How will this info be shown to guests??"
+            android:layout_marginTop="15dp"
+            app:layout_constraintTop_toBottomOf="@id/description"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:background="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/guestText"
+            app:layout_constraintEnd_toEndOf="@id/guestText"
+            app:layout_constraintStart_toStartOf="@id/guestText"
+            android:layout_width="0dp"
+            android:layout_height="1dp"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/header"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:text="Safety considerations"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/layout1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/headerDescription"
+        android:text="Response required"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toStartOf="@id/crossImg"
+        app:layout_constraintBottom_toBottomOf="@id/crossImg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/crossImg"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:text="Pool/hot tub without a gate or dfer dfdd dfdfdfdfdfdfdfdfdfdfdfdffdlock"
+        android:layout_marginTop="15dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:textSize="14sp"
+        android:id="@+id/titleDescription"
+        android:text="Guest wiil have direct access to an ungated/ unlocked in-ground or above -groudn wweimming pool or hot hub"
+        android:layout_marginTop="3dp"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/crossImg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:id="@+id/learMore"
+        android:text="Learn more"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/titleDescription"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:id="@+id/learView"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/learMore"
+        app:layout_constraintEnd_toEndOf="@id/learMore"
+        app:layout_constraintStart_toStartOf="@id/learMore"
+        android:layout_width="0dp"
+        android:layout_height="1dp"/>
+
+    <View
+        android:background="@color/lightGray"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/learView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+
+
+    <ImageView
+        android:id="@+id/checkImg"
+        android:src="@drawable/check_mark"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/headerDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/crossImg"
+        android:src="@drawable/cross_circle"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintBottom_toBottomOf="@id/checkImg"
+        app:layout_constraintTop_toTopOf="@id/checkImg"
+        app:layout_constraintEnd_toStartOf="@id/checkImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

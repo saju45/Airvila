@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Activitys.Host.Activity.WhoCanBookActivity">
+
+
+    <LinearLayout
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/crossBtn"
+            android:src="@drawable/cross_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:fontFamily="@font/alike"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:text="Who can book  \ninstantly?"
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textSize="16sp"
+            android:text="Hosts can get up to 2x more reservations when they let guests book instantly."
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:textSize="16sp"
+            android:text="In addition to meeting Airbnb's \nrequirements, guests must agree to your house rules to book. if they break your rules, you can cancel penalty-free."
+            android:layout_marginTop="35dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:background="@color/lightGray"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+
+
+        <TextView
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:textColor="#009688"
+            android:textSize="18sp"
+            android:text="House rules"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <View
+            android:background="@color/lightGray"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+
+        <TextView
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:textColor="#009688"
+            android:textSize="18sp"
+            android:text="Guest requirements "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+    </LinearLayout>
+
+
+    <View
+        android:background="@color/lightGray"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@id/tryBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/tryBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Try it out"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_bg"
+        android:backgroundTint="#39AFA4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

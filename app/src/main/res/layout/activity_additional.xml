@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activitys.Host.Activity.AdditionalActivity">
+
+
+    <ImageView
+        android:id="@+id/crossBtn"
+        android:src="@drawable/cross_circle"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:fontFamily="@font/alike"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:text="Additional Charges"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/cleaningFree"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="Cleaning Fee"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:id="@+id/text1"
+            android:textSize="16sp"
+            android:text="$9 per stay, including short stays "
+            android:layout_marginTop="3dp"
+            app:layout_constraintTop_toBottomOf="@id/cleaningFree"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/clEdit"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:text="Edit"
+            app:layout_constraintBottom_toBottomOf="@id/cleaningFree"
+            app:layout_constraintTop_toTopOf="@id/cleaningFree"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <View
+            android:background="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/clEdit"
+            app:layout_constraintEnd_toEndOf="@id/clEdit"
+            app:layout_constraintStart_toStartOf="@id/clEdit"
+            android:layout_width="0dp"
+            android:layout_height="1dp"/>
+
+
+        <View
+            app:layout_constraintTop_toBottomOf="@id/text1"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@color/lightGray"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/petfee"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="Pet fee"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:id="@+id/text2"
+            android:textSize="16sp"
+            android:text="pets are not currently allowed "
+            android:layout_marginTop="3dp"
+            app:layout_constraintTop_toBottomOf="@id/petfee"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/ptEdit"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:text="Edit"
+            app:layout_constraintBottom_toBottomOf="@id/petfee"
+            app:layout_constraintTop_toTopOf="@id/petfee"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <View
+            android:background="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/ptEdit"
+            app:layout_constraintEnd_toEndOf="@id/ptEdit"
+            app:layout_constraintStart_toStartOf="@id/ptEdit"
+            android:layout_width="0dp"
+            android:layout_height="1dp"/>
+
+
+        <View
+            app:layout_constraintTop_toBottomOf="@id/text2"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@color/lightGray"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/egfee"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="Extra guest fee"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:id="@+id/text3"
+            android:textSize="16sp"
+            android:text="$5 per person per night, for more than 1 guests "
+            android:layout_marginTop="3dp"
+            app:layout_constraintTop_toBottomOf="@id/egfee"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/egEdit"
+            android:layout_marginEnd="15dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/egEdit"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:text="Edit"
+            app:layout_constraintBottom_toBottomOf="@id/egfee"
+            app:layout_constraintTop_toTopOf="@id/egfee"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <View
+            android:background="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/egEdit"
+            app:layout_constraintEnd_toEndOf="@id/egEdit"
+            app:layout_constraintStart_toStartOf="@id/egEdit"
+            android:layout_width="0dp"
+            android:layout_height="1dp"/>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    tools:context=".Activitys.Host.Activity.AboutPricingActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/crossBtn"
+            android:src="@drawable/cross_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:fontFamily="@font/alike"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:text="About pricing"
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textSize="16sp"
+            android:text="You're responsible for choosing the listing price."
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:fontFamily="@font/alike"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:text="Smart Pricing"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+        <TextView
+            android:textSize="16sp"
+            android:text="Smart pricing lets your set your prices to automatically go up or down based on changes in demad for listing gs like your. You're always responsible for your price, so Smart pricing is controlled by other pricing settings you choose, and you can adjust nightly prices any time. Smart Pricing is bases on the type and location of your listing, the season, demand,and other factor."
+            android:layout_marginTop="7dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:fontFamily="@font/alike"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:text="Pricing tips"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textSize="16sp"
+            android:text="Price tips are automated nightly price recommendations that you can choose to save. They're based on the type and location of your listing, the season, demand , and other factors. \n \nEven if you use price tips, you always control your price and can override the tips at any time."
+            android:layout_marginTop="7dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>
