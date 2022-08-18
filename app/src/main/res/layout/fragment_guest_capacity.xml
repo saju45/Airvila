@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Activitys.Host.Fragment.GuestCapacityFragment">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        app:cardElevation="5dp"
+        android:elevation="4dp"
+        app:cardCornerRadius="10dp"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/guest"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:text="Guests"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+            <TextView
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:text="1"
+                android:id="@+id/guestCount"
+                android:layout_marginStart="35dp"
+                android:layout_toRightOf="@id/guest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Spinner
+                android:layout_marginStart="5dp"
+                android:layout_toRightOf="@id/guestCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        app:cardElevation="5dp"
+        android:elevation="4dp"
+        app:cardCornerRadius="10dp"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/bed"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:text="Beds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+            <TextView
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:text="1"
+                android:id="@+id/bedCount"
+                android:layout_marginStart="35dp"
+                android:layout_toRightOf="@id/bed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Spinner
+                android:layout_marginStart="5dp"
+                android:layout_toRightOf="@id/bedCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        app:cardElevation="5dp"
+        android:elevation="4dp"
+        app:cardCornerRadius="10dp"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/bedRoom"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:text="Bed Rooms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+            <TextView
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:text="1"
+                android:id="@+id/bedRoomCount"
+                android:layout_marginStart="35dp"
+                android:layout_toRightOf="@id/bedRoom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Spinner
+                android:layout_marginStart="5dp"
+                android:layout_toRightOf="@id/bedRoomCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        app:cardElevation="5dp"
+        android:elevation="4dp"
+        app:cardCornerRadius="10dp"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/bathroom"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:text="Bathrooms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+            <TextView
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:text="1"
+                android:id="@+id/bathroomCount"
+                android:layout_marginStart="35dp"
+                android:layout_toRightOf="@id/bathroom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Spinner
+                android:layout_marginStart="5dp"
+                android:layout_toRightOf="@id/bathroomCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        app:cardElevation="5dp"
+        android:elevation="4dp"
+        app:cardCornerRadius="10dp"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/kitchen"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:text="Kitchen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+            <TextView
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:text="1"
+                android:id="@+id/kitchenCount"
+                android:layout_marginStart="35dp"
+                android:layout_toRightOf="@id/kitchen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Spinner
+                android:layout_marginStart="5dp"
+                android:layout_toRightOf="@id/kitchenCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

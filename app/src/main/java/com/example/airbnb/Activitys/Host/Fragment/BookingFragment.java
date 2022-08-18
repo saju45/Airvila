@@ -14,6 +14,7 @@ import com.example.airbnb.Activitys.Host.Activity.AdditionalActivity;
 import com.example.airbnb.Activitys.Host.Activity.AvailablilitySettingActivity;
 import com.example.airbnb.Activitys.Host.Activity.CancellationPolicyActivity;
 import com.example.airbnb.Activitys.Host.Activity.CheckInSettingActivity;
+import com.example.airbnb.Activitys.Host.Activity.CoHostActivity;
 import com.example.airbnb.Activitys.Host.Activity.CurrencyActivity;
 import com.example.airbnb.Activitys.Host.Activity.GuestBookActivity;
 import com.example.airbnb.Activitys.Host.Activity.GuestRequrmentsActivity;
@@ -21,6 +22,7 @@ import com.example.airbnb.Activitys.Host.Activity.HelpfulRulesCalendarActivity;
 import com.example.airbnb.Activitys.Host.Activity.HouseRulesActivity;
 import com.example.airbnb.Activitys.Host.Activity.LengthActivity;
 import com.example.airbnb.Activitys.Host.Activity.LinkAirbnbCalendarActivity;
+import com.example.airbnb.Activitys.Host.Activity.ListingStatusMainActivity;
 import com.example.airbnb.Activitys.Host.Activity.PrevieWhatGuestActivity;
 import com.example.airbnb.Activitys.Host.Activity.TripLengthActivity;
 import com.example.airbnb.Activitys.Host.Activity.WhoCanBookActivity;
@@ -174,6 +176,31 @@ public class BookingFragment extends Fragment {
             public void onClick(View v) {
 
                 startActivity(new Intent(getContext(), LinkAirbnbCalendarActivity.class));
+            }
+        });
+
+        binding.coHostsLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                startActivity(new Intent(getContext(), CoHostActivity.class));
+            }
+        });
+
+        binding.localLawsLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        binding.statusLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+                startActivity(new Intent(new Intent(getContext(), ListingStatusMainActivity.class)));
+
             }
         });
     }

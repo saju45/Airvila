@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.airbnb" >
+    package="com.example.airbnb">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -15,7 +15,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Airbnb"
         android:usesCleartextTraffic="true"
-        tools:targetApi="31" >
+        tools:targetApi="31">
+        <activity
+            android:name=".Activitys.Activity.AllMessageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.Activity.MessageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.Host.Activity.CreateNewListingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.Host.Activity.ListingStatusMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.Host.Activity.LocalLawsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.Host.Activity.CoHostActivity"
+            android:exported="false" />
         <activity
             android:name=".Activitys.Host.Activity.LinkAirbnbCalendarActivity"
             android:exported="false" />
@@ -156,7 +174,7 @@
             android:exported="true" />
         <activity
             android:name=".Activitys.Activity.MainActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

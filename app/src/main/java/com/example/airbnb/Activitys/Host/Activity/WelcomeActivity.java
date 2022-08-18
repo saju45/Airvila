@@ -3,15 +3,23 @@ package com.example.airbnb.Activitys.Host.Activity;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.airbnb.Activitys.Fragments.CreateListingFragment;
 import com.example.airbnb.Activitys.Host.Fragment.BestDescribePlaceragment;
+import com.example.airbnb.Activitys.Host.Fragment.GuestCapacityFragment;
 import com.example.airbnb.Activitys.Host.Fragment.HowManyGuestFragment;
+import com.example.airbnb.Activitys.Host.Fragment.ListingAddressFragment;
 import com.example.airbnb.Activitys.Host.Fragment.ListingFragment;
 import com.example.airbnb.Activitys.Host.Fragment.PlaceOfferFragment;
+import com.example.airbnb.Activitys.Host.Fragment.SizeSqftFragment;
+import com.example.airbnb.Activitys.Host.Fragment.SpecialityFragment;
 import com.example.airbnb.R;
 import com.example.airbnb.databinding.ActivityWelcomeBinding;
 
@@ -40,6 +48,22 @@ public class WelcomeActivity extends AppCompatActivity {
 
     public void clickListener(){
 
+        binding.cardCreate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+             //   startActivity(new Intent(WelcomeActivity.this,CreateNewListingActivity.class));
+
+                binding.welcomeText.setText("Create a new listing \n for your resort");
+                binding.name.setVisibility(View.GONE);
+                binding.layout1.setLayoutParams(new ConstraintLayout.LayoutParams(ConstraintLayout.LayoutParams.MATCH_PARENT, 300));
+                binding.btnLayout.setVisibility(View.VISIBLE);
+                getSupportFragmentManager().beginTransaction().replace(R.id.welcomeFrameLayout,new CreateListingFragment()).commit();
+                binding.layout2.setVisibility(View.GONE);
+
+            }
+        });
+
         binding.cardListing.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -48,9 +72,11 @@ public class WelcomeActivity extends AppCompatActivity {
                 binding.name.setVisibility(View.GONE);
                 binding.layout1.setLayoutParams(new ConstraintLayout.LayoutParams(ConstraintLayout.LayoutParams.MATCH_PARENT, 800));
                binding.btnLayout.setVisibility(View.VISIBLE);
-                getSupportFragmentManager().beginTransaction().replace(R.id.welcomeFrameLayout,new ListingFragment()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.welcomeFrameLayout,new CreateListingFragment()).commit();
                 binding.layout2.setVisibility(View.GONE);
 
+
+               // startActivity(new Intent(WelcomeActivity.this,CreateNewListingActivity.class));
 
             }
         });
@@ -81,6 +107,23 @@ public class WelcomeActivity extends AppCompatActivity {
 
             }
         });
+
+
+
+/*
+        binding.nextBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                binding.welcomeText.setText("Choose your Speciality");
+                binding.name.setVisibility(View.GONE);
+                binding.layout1.setLayoutParams(new ConstraintLayout.LayoutParams(ConstraintLayout.LayoutParams.MATCH_PARENT, 400));
+                getSupportFragmentManager().beginTransaction().replace(R.id.welcomeFrameLayout,new SpecialityFragment()).commit();
+
+            }
+        });
+*/
+
 
     }
 

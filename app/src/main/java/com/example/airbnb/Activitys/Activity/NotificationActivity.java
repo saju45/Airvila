@@ -22,7 +22,6 @@ public class NotificationActivity extends AppCompatActivity {
         binding=ActivityNotificationBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-
         clickListener();
 
     }

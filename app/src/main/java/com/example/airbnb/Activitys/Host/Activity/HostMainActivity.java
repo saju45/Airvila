@@ -31,6 +31,7 @@ public class HostMainActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         clickListener();
+        getSupportFragmentManager().beginTransaction().replace(R.id.mainFrameLayout,new TodayFragment()).commit();
 
     }
 

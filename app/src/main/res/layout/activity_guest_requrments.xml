@@ -35,7 +35,7 @@
 
             <TextView
                 android:fontFamily="@font/alike"
-                android:textSize="30sp"
+                android:textSize="25sp"
                 android:textColor="@color/black"
                 android:text="Guest requirements"
                 android:layout_marginTop="25dp"
@@ -163,7 +163,7 @@
             <TextView
                 android:fontFamily="@font/alike"
                 android:textColor="@color/black"
-                android:textSize="22sp"
+                android:textSize="20sp"
                 android:text="Instant Book only"
                 android:layout_marginTop="30dp"
                 android:layout_width="wrap_content"

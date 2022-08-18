@@ -1,14 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Activitys.Fragments.InboxFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
 
-</FrameLayout>
+
+    <ImageView
+        android:id="@+id/menu"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/menu24"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+    <TextView
+        android:id="@+id/title"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:text="All Message"
+        app:layout_constraintBottom_toBottomOf="@id/menu"
+        app:layout_constraintTop_toTopOf="@id/menu"
+        android:layout_marginStart="15dp"
+        app:layout_constraintStart_toEndOf="@id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <ImageView
+        android:id="@+id/searchImg"
+        android:src="@drawable/search32"
+        android:layout_marginEnd="35dp"
+        app:layout_constraintBottom_toBottomOf="@id/menu"
+        app:layout_constraintTop_toTopOf="@id/menu"
+        app:layout_constraintEnd_toStartOf="@id/slide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:padding="5dp"
+        android:id="@+id/editLayout"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@id/slide"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/slide"
+        app:layout_constraintBottom_toBottomOf="@id/slide"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/search_bg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        
+        
+        <ImageView
+            android:id="@+id/leftArrow"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/left24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        
+        
+        <EditText
+            
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toEndOf="@id/leftArrow"
+            android:layout_width="0dp"
+            android:background="@color/white"
+            android:layout_height="wrap_content"/>
+        
+        <ImageView
+            android:id="@+id/cross"
+            android:src="@drawable/delete"
+            android:layout_marginEnd="7dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        
+        
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:id="@+id/slide"
+        android:src="@drawable/preferences2"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:id="@+id/view1"
+        android:background="@color/lightGray"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/slide"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/allMessageRv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view1"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,4 +2,38 @@
     <string name="app_name">Airbnb</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="create_listing_group">
+
+
+        <item>Apartment</item>
+        <item>House</item>
+        <item>Hotel Room</item>
+        <item>Secondary Unit</item>
+        <item>Resort</item>
+        <item>Uncommon Space</item>
+
+    </string-array>
+
+
+    <string-array name="create_listing_header_apartment">
+        <item>Serviced Apartment </item>
+        <item>Condo</item>
+        <item>Vacation Home</item>
+        <item>Rooftop</item>
+
+    </string-array>
+
+    <string-array name="create_listing_header_house">
+        <item>Home</item>
+        <item>Cabin</item>
+        <item>Villa</item>
+        <item>Cottage</item>
+        <item>Bungalow</item>
+        <item>Farm House</item>
+        <item>Vacation</item>
+
+    </string-array>
+
+
 </resources>
