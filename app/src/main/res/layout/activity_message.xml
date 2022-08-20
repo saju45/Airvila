@@ -36,6 +36,17 @@
 
 
     <ImageView
+        android:src="@drawable/translation"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintBottom_toBottomOf="@id/menuImg"
+        app:layout_constraintTop_toTopOf="@id/menuImg"
+        app:layout_constraintEnd_toStartOf="@id/menuImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <ImageView
+        android:id="@+id/menuImg"
         android:layout_marginEnd="15dp"
         android:src="@drawable/menu_1"
         app:layout_constraintBottom_toBottomOf="@id/name"
@@ -135,7 +146,11 @@
 
 
     <androidx.recyclerview.widget.RecyclerView
-        app:layout_constraintBottom_toTopOf="@id/view3"
+        android:id="@+id/messageRv"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toTopOf="@id/view4"
         app:layout_constraintTop_toBottomOf="@id/detailsLayout"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_width="match_parent"
@@ -217,7 +232,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:visibility="visible"
-        android:id="@+id/inbox"
+        android:id="@+id/inboxLayout"
         android:layout_marginBottom="10dp"
         android:padding="10dp"
         android:background="@drawable/search_bg"

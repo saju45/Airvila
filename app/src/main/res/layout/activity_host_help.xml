@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.Host.Activity.HostHelpActivity">
+
+
+
+
+    <ImageView
+        android:id="@+id/backImg"
+        android:src="@drawable/back_arrow2"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/hiTExt"
+        android:fontFamily="@font/alike"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:text="Hi"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintTop_toBottomOf="@id/backImg"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:fontFamily="@font/alike"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:text="Rabik,"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintTop_toBottomOf="@id/backImg"
+        app:layout_constraintStart_toEndOf="@id/hiTExt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/helpText"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:text="how can we help?"
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toBottomOf="@id/hiTExt"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
+        android:padding="10sp"
+        android:id="@+id/searchLayout"
+        android:backgroundTint="#D8D7D7"
+        android:background="@drawable/search_bg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/helpText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/serachImg"
+                android:src="@drawable/search24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:tint="#E91E63" />
+
+            <TextView
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:text="Search help"
+                android:layout_marginStart="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <TextView
+        android:id="@+id/guest"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:text="Guest"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintTop_toBottomOf="@id/searchLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/host"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:text="Host"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/guest"
+        app:layout_constraintTop_toTopOf="@id/guest"
+        app:layout_constraintStart_toEndOf="@id/guest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/experienceHost"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:text="Experience Host"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/guest"
+        app:layout_constraintTop_toTopOf="@id/guest"
+        app:layout_constraintStart_toEndOf="@id/host"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/travelAdmin"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:text="Travel admin"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/guest"
+        app:layout_constraintTop_toTopOf="@id/guest"
+        app:layout_constraintStart_toEndOf="@id/experienceHost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+    <View
+        android:id="@+id/guestView"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/guest"
+        app:layout_constraintEnd_toEndOf="@id/guest"
+        app:layout_constraintStart_toStartOf="@id/guest"
+        android:layout_width="0dp"
+        android:layout_height="1dp"/>
+
+    <View
+        android:visibility="gone"
+        android:id="@+id/hostView"
+        android:background="@color/black"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/host"
+        app:layout_constraintEnd_toEndOf="@id/host"
+        app:layout_constraintStart_toStartOf="@id/host"
+        android:layout_width="0dp"
+        android:layout_height="1dp"/>
+
+
+    <View
+        android:visibility="gone"
+        android:id="@+id/experienceHostView"
+        android:background="@color/black"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/experienceHost"
+        app:layout_constraintEnd_toEndOf="@id/experienceHost"
+        app:layout_constraintStart_toStartOf="@id/experienceHost"
+        android:layout_width="0dp"
+        android:layout_height="1dp"/>
+
+
+    <View
+        android:visibility="gone"
+        android:id="@+id/travelAdminView"
+        android:background="@color/black"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/travelAdmin"
+        app:layout_constraintEnd_toEndOf="@id/travelAdmin"
+        app:layout_constraintStart_toStartOf="@id/travelAdmin"
+        android:layout_width="0dp"
+        android:layout_height="1dp"/>
+
+
+
+    <View
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:id="@+id/view1"
+        android:background="@color/lightGray"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/guest"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+
+
+    <FrameLayout
+        android:id="@+id/helpFrameLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

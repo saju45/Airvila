@@ -17,6 +17,18 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".Activitys.Host.Activity.HostHelpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.Host.Activity.HostSettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.Host.Activity.HostProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.Host.Activity.ReservationActivity"
+            android:exported="false" />
+        <activity
             android:name=".Activitys.Activity.AllMessageActivity"
             android:exported="false" />
         <activity

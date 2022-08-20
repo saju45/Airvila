@@ -25,11 +25,11 @@ public class MessageActivity extends AppCompatActivity {
     public void clickListener(){
 
 
-        binding.inbox.setOnClickListener(new View.OnClickListener() {
+        binding.inboxLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                binding.inbox.setVisibility(View.GONE);
+                binding.inboxLayout.setVisibility(View.GONE);
                 binding.galleryImg.setVisibility(View.GONE);
                 binding.chat.setVisibility(View.GONE);
                 binding.view4.setVisibility(View.GONE);
@@ -37,6 +37,9 @@ public class MessageActivity extends AppCompatActivity {
                 binding.view3.setVisibility(View.VISIBLE);
             }
         });
+
+
+
 
     }
 }

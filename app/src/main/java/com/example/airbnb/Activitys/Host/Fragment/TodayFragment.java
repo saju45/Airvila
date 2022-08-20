@@ -44,6 +44,8 @@ public class TodayFragment extends Fragment {
         list2=new ArrayList<>();
         reservationItem();
 
+        clickListener();
+
         ReservationAdapter adapter=new ReservationAdapter(getContext(),list);
         NextStepAdapter adapter1=new NextStepAdapter(getContext(),nextStepModelArrayList);
         HostingUpdateAdapter adapter2=new HostingUpdateAdapter(getContext(),list2);
@@ -73,6 +75,15 @@ public class TodayFragment extends Fragment {
         return binding.getRoot();
     }
 
+    public void clickListener(){
+
+        binding.reservation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+    }
 
     public void reservationItem(){
 
